@@ -2,7 +2,7 @@
     "docs": [
         {
             "location": "/", 
-            "text": "MODS Indexing and Display\n\n\nThe \nBrown Digital Repository\n makes extensive use of the MODS xml format for descriptive metadata.  This site documents the current indexing and display of the information contained in the MODS xml fields.\n\n\nElements\n\n\ntitleInfo\n\n\nlanguage\n\n\nnote\n\n\nlocation\n\n\nname\n\n\nphysicalDescription\n\n\nsubject\n\n\naccessCondition\n\n\ntypeOfResource\n\n\nabstract\n\n\nclassification\n\n\npart\n\n\ngenre\n\n\ntableOfContents\n\n\nrelatedItem\n\n\nextension\n\n\noriginInfo\n\n\ntargetAudience\n\n\nidentifier\n\n\nrecordInfo", 
+            "text": "MODS Indexing and Display\n\n\nThe \nBrown Digital Repository\n makes extensive use of the MODS xml format for descriptive metadata.  This site documents the current indexing and display of the information contained in the MODS xml fields.\n\n\nElements\n\n\n\n\nabstract\n\n\naccessCondition\n\n\nclassification\n\n\nextension\n\n\ngenre\n\n\nidentifier\n\n\nlanguage\n\n\nlocation\n\n\nname\n\n\nnote\n\n\noriginInfo\n\n\npart\n\n\nphysicalDescription\n\n\nrecordInfo\n\n\nrelatedItem\n\n\nsubject\n\n\ntableOfContents\n\n\ntargetAudience\n\n\ntitleInfo\n\n\ntypeOfResource", 
             "title": "Home"
         }, 
         {
@@ -12,7 +12,7 @@
         }, 
         {
             "location": "/#elements", 
-            "text": "titleInfo  language  note  location  name  physicalDescription  subject  accessCondition  typeOfResource  abstract  classification  part  genre  tableOfContents  relatedItem  extension  originInfo  targetAudience  identifier  recordInfo", 
+            "text": "abstract  accessCondition  classification  extension  genre  identifier  language  location  name  note  originInfo  part  physicalDescription  recordInfo  relatedItem  subject  tableOfContents  targetAudience  titleInfo  typeOfResource", 
             "title": "Elements"
         }, 
         {
