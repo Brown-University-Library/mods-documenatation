@@ -1,0 +1,119 @@
+{
+    "docs": [
+        {
+            "location": "/", 
+            "text": "MODS Indexing and Display\n\n\nThe \nBrown Digital Repository\n makes extensive use of the MODS xml format for descriptive metadata.  This site documents the current indexing and display of the information contained in the MODS xml fields.\n\n\nElements\n\n\ntitleInfo\n\n\nlanguage\n\n\nnote\n\n\nlocation\n\n\nname\n\n\nphysicalDescription\n\n\nsubject\n\n\naccessCondition\n\n\ntypeOfResource\n\n\nabstract\n\n\nclassification\n\n\npart\n\n\ngenre\n\n\ntableOfContents\n\n\nrelatedItem\n\n\nextension\n\n\noriginInfo\n\n\ntargetAudience\n\n\nidentifier\n\n\nrecordInfo", 
+            "title": "Home"
+        }, 
+        {
+            "location": "/#mods-indexing-and-display", 
+            "text": "The  Brown Digital Repository  makes extensive use of the MODS xml format for descriptive metadata.  This site documents the current indexing and display of the information contained in the MODS xml fields.", 
+            "title": "MODS Indexing and Display"
+        }, 
+        {
+            "location": "/#elements", 
+            "text": "titleInfo  language  note  location  name  physicalDescription  subject  accessCondition  typeOfResource  abstract  classification  part  genre  tableOfContents  relatedItem  extension  originInfo  targetAudience  identifier  recordInfo", 
+            "title": "Elements"
+        }, 
+        {
+            "location": "/elements/abstract/", 
+            "text": "", 
+            "title": "Abstract"
+        }, 
+        {
+            "location": "/elements/accessCondition/", 
+            "text": "", 
+            "title": "accessCondition"
+        }, 
+        {
+            "location": "/elements/classification/", 
+            "text": "", 
+            "title": "Classification"
+        }, 
+        {
+            "location": "/elements/extension/", 
+            "text": "", 
+            "title": "Extension"
+        }, 
+        {
+            "location": "/elements/genre/", 
+            "text": "", 
+            "title": "Genre"
+        }, 
+        {
+            "location": "/elements/identifier/", 
+            "text": "", 
+            "title": "Identifier"
+        }, 
+        {
+            "location": "/elements/language/", 
+            "text": "", 
+            "title": "Language"
+        }, 
+        {
+            "location": "/elements/location/", 
+            "text": "", 
+            "title": "Location"
+        }, 
+        {
+            "location": "/elements/name/", 
+            "text": "", 
+            "title": "Name"
+        }, 
+        {
+            "location": "/elements/note/", 
+            "text": "", 
+            "title": "Note"
+        }, 
+        {
+            "location": "/elements/originInfo/", 
+            "text": "", 
+            "title": "originInfo"
+        }, 
+        {
+            "location": "/elements/part/", 
+            "text": "", 
+            "title": "Part"
+        }, 
+        {
+            "location": "/elements/physicalDescription/", 
+            "text": "", 
+            "title": "physicalDescription"
+        }, 
+        {
+            "location": "/elements/recordInfo/", 
+            "text": "", 
+            "title": "recordInfo"
+        }, 
+        {
+            "location": "/elements/relatedItem/", 
+            "text": "", 
+            "title": "relatedItem"
+        }, 
+        {
+            "location": "/elements/subject/", 
+            "text": "", 
+            "title": "Subject"
+        }, 
+        {
+            "location": "/elements/tableOfContents/", 
+            "text": "", 
+            "title": "tableOfContents"
+        }, 
+        {
+            "location": "/elements/targetAudience/", 
+            "text": "", 
+            "title": "targetAudience"
+        }, 
+        {
+            "location": "/elements/titleInfo/", 
+            "text": "", 
+            "title": "titleInfo"
+        }, 
+        {
+            "location": "/elements/typeOfResource/", 
+            "text": "", 
+            "title": "typeOfResource"
+        }
+    ]
+}
