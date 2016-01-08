@@ -1,17 +1,25 @@
-# Welcome to MkDocs
+# MODS Indexing and Display
 
-For full documentation visit [mkdocs.org](http://mkdocs.org).
+The [Brown Digital Repository](https://repository.library.brown.edu) makes extensive use of the MODS xml format for descriptive metadata.  This site documents the current indexing and display of the information contained in the MODS xml fields.
 
-## Commands
-
-* `mkdocs new [dir-name]` - Create a new project.
-* `mkdocs serve` - Start the live-reloading docs server.
-* `mkdocs build` - Build the documentation site.
-* `mkdocs help` - Print this help message.
-
-## Project layout
-
-    mkdocs.yml    # The configuration file.
-    docs/
-        index.md  # The documentation homepage.
-        ...       # Other markdown pages, images and other files.
+## Elements
+### [titleInfo](elements/titleInfo.md)
+### [language](elements/language.md)
+### [note](elements/note.md)
+### [location](elements/location.md)
+### [name](elements/name.md)
+### [physicalDescription](elements/physicalDescription.md)
+### [subject](elements/subject.md)
+### [accessCondition](elements/accessCondition.md)
+### [typeOfResource](elements/typeOfResource.md)
+### [abstract](elements/abstract.md)
+### [classification](elements/classification.md)
+### [part](elements/part.md)
+### [genre](elements/genre.md)
+### [tableOfContents](elements/tableOfContents.md)
+### [relatedItem](elements/relatedItem.md)
+### [extension](elements/extension.md)
+### [originInfo](elements/originInfo.md)
+### [targetAudience](elements/targetAudience.md)
+### [identifier](elements/identifier.md)
+### [recordInfo](elements/recordInfo.md)
