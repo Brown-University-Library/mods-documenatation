@@ -193,6 +193,20 @@
         
             <ul>
             
+                <li class="toctree-l3"><a href="#indexing">Indexing</a></li>
+                
+                    <li><a class="toctree-l4" href="#current">Current</a></li>
+                
+                    <li><a class="toctree-l4" href="#fields-created">Fields Created</a></li>
+                
+                    <li><a class="toctree-l4" href="#notes-for-future">Notes for future</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#display">Display</a></li>
+                
+                    <li><a class="toctree-l4" href="#current_1">Current</a></li>
+                
+            
             </ul>
         
     </li>
@@ -244,7 +258,63 @@
           <div role="main">
             <div class="section">
               
-                
+                <h1 id="indexing">Indexing</h1>
+<h2 id="current">Current</h2>
+<p><code>titleInfo</code> is a repeatable element and the indexing will vary  depending upon the attribute <code>type</code></p>
+<h2 id="fields-created">Fields Created</h2>
+<ul>
+<li>
+<p><code>mods_title_alt</code> - a <em>multivalued</em>, <em>indexed</em> field
+all <code>title</code> sub-elements of the set of <code>titleInfo</code> which have the attribute <code>@type="alternative"</code></p>
+</li>
+<li>
+<p><code>other_title</code> - a <em>multivalued</em>, <em>indexed</em> field
+all <code>title</code> sub-elements of the set of <code>titleInfo</code> which have the attribute <code>@type!="alternative"</code> which are not the first element</p>
+</li>
+<li>
+<p><code>primary_title</code> - a <em>single valued</em>, <em>sortable</em> <em>indexed</em> field
+<code>title</code> sub-element of the the first <code>titleInfo</code>
+in the set of <code>titleInfo</code> which have the 
+attribute <code>@type!="alternative"</code> </p>
+</li>
+<li>
+<p><code>subtitle</code> - a <em>single valued</em>, <em>sortable</em> <em>indexed</em> field
+<code>subtitle</code> sub-element of the the first <code>titleInfo</code>
+in the set of <code>titleInfo</code> which have the 
+attribute <code>@type!="alternative"</code> </p>
+</li>
+<li>
+<p><code>partnumber</code> - a <em>single valued</em>, <em>sortable</em> <em>indexed</em> field
+<code>partnumber</code> sub-element of the the first <code>titleInfo</code>
+in the set of <code>titleInfo</code> which have the 
+attribute <code>@type!="alternative"</code> </p>
+</li>
+<li>
+<p><code>partname</code> - a <em>single valued</em>, <em>sortable</em> <em>indexed</em> field
+<code>partname</code> sub-element of the the first <code>titleInfo</code>
+in the set of <code>titleInfo</code> which have the 
+attribute <code>@type!="alternative"</code> </p>
+</li>
+<li>
+<p><code>nonsort</code> - a <em>single valued</em>, field
+<code>nonsort</code> sub-element of the the first <code>titleInfo</code>
+in the set of <code>titleInfo</code> which have the 
+attribute <code>@type!="alternative"</code> </p>
+</li>
+</ul>
+<h2 id="notes-for-future">Notes for future</h2>
+<ul>
+<li>Only the "primary" title has it's non <code>title</code> subelements indexed.  This should change</li>
+<li>More types are vailable than <code>type="alternative"</code>.  Such as <code>abbreviated</code>, <code>translated</code>, and <code>uniform</code></li>
+<li>A composit title or <code>mods_title_full</code> could be created wich is an intelligent concatination of the sub-elements in a given <code>titleInfo</code> element. It may be useful to sort on this.</li>
+<li>The attribute "@displayLabel" should be respected and incorporated if present</li>
+<li>If <code>@type="translated"</code> then the <code>@language</code> attribute would be important</li>
+</ul>
+<h1 id="display">Display</h1>
+<h2 id="current_1">Current</h2>
+<p>Usually only the elements associated with the <code>primary_title</code> are displayed they are a concatination of </p>
+<pre><code>[nonsort] primary_title[: subtitle] [partname] [partnumber]
+</code></pre>
               
             </div>
           </div>

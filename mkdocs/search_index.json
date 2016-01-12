@@ -17,103 +17,323 @@
         }, 
         {
             "location": "/elements/abstract/", 
-            "text": "", 
+            "text": "Indexing\n\n\nDisplay", 
             "title": "Abstract"
         }, 
         {
-            "location": "/elements/accessCondition/", 
+            "location": "/elements/abstract/#indexing", 
             "text": "", 
+            "title": "Indexing"
+        }, 
+        {
+            "location": "/elements/abstract/#display", 
+            "text": "", 
+            "title": "Display"
+        }, 
+        {
+            "location": "/elements/accessCondition/", 
+            "text": "Indexing\n\n\nDisplay", 
             "title": "accessCondition"
         }, 
         {
-            "location": "/elements/classification/", 
+            "location": "/elements/accessCondition/#indexing", 
             "text": "", 
+            "title": "Indexing"
+        }, 
+        {
+            "location": "/elements/accessCondition/#display", 
+            "text": "", 
+            "title": "Display"
+        }, 
+        {
+            "location": "/elements/classification/", 
+            "text": "Indexing\n\n\nDisplay", 
             "title": "Classification"
         }, 
         {
-            "location": "/elements/extension/", 
+            "location": "/elements/classification/#indexing", 
             "text": "", 
+            "title": "Indexing"
+        }, 
+        {
+            "location": "/elements/classification/#display", 
+            "text": "", 
+            "title": "Display"
+        }, 
+        {
+            "location": "/elements/extension/", 
+            "text": "Indexing\n\n\nDisplay", 
             "title": "Extension"
         }, 
         {
-            "location": "/elements/genre/", 
+            "location": "/elements/extension/#indexing", 
             "text": "", 
+            "title": "Indexing"
+        }, 
+        {
+            "location": "/elements/extension/#display", 
+            "text": "", 
+            "title": "Display"
+        }, 
+        {
+            "location": "/elements/genre/", 
+            "text": "Indexing\n\n\nDisplay", 
             "title": "Genre"
         }, 
         {
-            "location": "/elements/identifier/", 
+            "location": "/elements/genre/#indexing", 
             "text": "", 
+            "title": "Indexing"
+        }, 
+        {
+            "location": "/elements/genre/#display", 
+            "text": "", 
+            "title": "Display"
+        }, 
+        {
+            "location": "/elements/identifier/", 
+            "text": "Indexing\n\n\nDisplay", 
             "title": "Identifier"
         }, 
         {
-            "location": "/elements/language/", 
+            "location": "/elements/identifier/#indexing", 
             "text": "", 
+            "title": "Indexing"
+        }, 
+        {
+            "location": "/elements/identifier/#display", 
+            "text": "", 
+            "title": "Display"
+        }, 
+        {
+            "location": "/elements/language/", 
+            "text": "Indexing\n\n\nDisplay", 
             "title": "Language"
         }, 
         {
-            "location": "/elements/location/", 
+            "location": "/elements/language/#indexing", 
             "text": "", 
+            "title": "Indexing"
+        }, 
+        {
+            "location": "/elements/language/#display", 
+            "text": "", 
+            "title": "Display"
+        }, 
+        {
+            "location": "/elements/location/", 
+            "text": "Indexing\n\n\nDisplay", 
             "title": "Location"
         }, 
         {
-            "location": "/elements/name/", 
+            "location": "/elements/location/#indexing", 
             "text": "", 
+            "title": "Indexing"
+        }, 
+        {
+            "location": "/elements/location/#display", 
+            "text": "", 
+            "title": "Display"
+        }, 
+        {
+            "location": "/elements/name/", 
+            "text": "Indexing\n\n\nDisplay", 
             "title": "Name"
         }, 
         {
-            "location": "/elements/note/", 
+            "location": "/elements/name/#indexing", 
             "text": "", 
+            "title": "Indexing"
+        }, 
+        {
+            "location": "/elements/name/#display", 
+            "text": "", 
+            "title": "Display"
+        }, 
+        {
+            "location": "/elements/note/", 
+            "text": "Indexing\n\n\nDisplay", 
             "title": "Note"
         }, 
         {
-            "location": "/elements/originInfo/", 
+            "location": "/elements/note/#indexing", 
             "text": "", 
+            "title": "Indexing"
+        }, 
+        {
+            "location": "/elements/note/#display", 
+            "text": "", 
+            "title": "Display"
+        }, 
+        {
+            "location": "/elements/originInfo/", 
+            "text": "Indexing\n\n\nDisplay", 
             "title": "originInfo"
         }, 
         {
-            "location": "/elements/part/", 
+            "location": "/elements/originInfo/#indexing", 
             "text": "", 
+            "title": "Indexing"
+        }, 
+        {
+            "location": "/elements/originInfo/#display", 
+            "text": "", 
+            "title": "Display"
+        }, 
+        {
+            "location": "/elements/part/", 
+            "text": "Indexing\n\n\nDisplay", 
             "title": "Part"
         }, 
         {
-            "location": "/elements/physicalDescription/", 
+            "location": "/elements/part/#indexing", 
             "text": "", 
+            "title": "Indexing"
+        }, 
+        {
+            "location": "/elements/part/#display", 
+            "text": "", 
+            "title": "Display"
+        }, 
+        {
+            "location": "/elements/physicalDescription/", 
+            "text": "Indexing\n\n\nDisplay", 
             "title": "physicalDescription"
         }, 
         {
-            "location": "/elements/recordInfo/", 
+            "location": "/elements/physicalDescription/#indexing", 
             "text": "", 
+            "title": "Indexing"
+        }, 
+        {
+            "location": "/elements/physicalDescription/#display", 
+            "text": "", 
+            "title": "Display"
+        }, 
+        {
+            "location": "/elements/recordInfo/", 
+            "text": "Indexing\n\n\nDisplay", 
             "title": "recordInfo"
         }, 
         {
-            "location": "/elements/relatedItem/", 
+            "location": "/elements/recordInfo/#indexing", 
             "text": "", 
+            "title": "Indexing"
+        }, 
+        {
+            "location": "/elements/recordInfo/#display", 
+            "text": "", 
+            "title": "Display"
+        }, 
+        {
+            "location": "/elements/relatedItem/", 
+            "text": "Indexing\n\n\nDisplay", 
             "title": "relatedItem"
         }, 
         {
-            "location": "/elements/subject/", 
+            "location": "/elements/relatedItem/#indexing", 
             "text": "", 
+            "title": "Indexing"
+        }, 
+        {
+            "location": "/elements/relatedItem/#display", 
+            "text": "", 
+            "title": "Display"
+        }, 
+        {
+            "location": "/elements/subject/", 
+            "text": "Indexing\n\n\nDisplay", 
             "title": "Subject"
         }, 
         {
-            "location": "/elements/tableOfContents/", 
+            "location": "/elements/subject/#indexing", 
             "text": "", 
+            "title": "Indexing"
+        }, 
+        {
+            "location": "/elements/subject/#display", 
+            "text": "", 
+            "title": "Display"
+        }, 
+        {
+            "location": "/elements/tableOfContents/", 
+            "text": "Indexing\n\n\nDisplay", 
             "title": "tableOfContents"
         }, 
         {
-            "location": "/elements/targetAudience/", 
+            "location": "/elements/tableOfContents/#indexing", 
             "text": "", 
+            "title": "Indexing"
+        }, 
+        {
+            "location": "/elements/tableOfContents/#display", 
+            "text": "", 
+            "title": "Display"
+        }, 
+        {
+            "location": "/elements/targetAudience/", 
+            "text": "Indexing\n\n\nDisplay", 
             "title": "targetAudience"
         }, 
         {
-            "location": "/elements/titleInfo/", 
+            "location": "/elements/targetAudience/#indexing", 
             "text": "", 
+            "title": "Indexing"
+        }, 
+        {
+            "location": "/elements/targetAudience/#display", 
+            "text": "", 
+            "title": "Display"
+        }, 
+        {
+            "location": "/elements/titleInfo/", 
+            "text": "Indexing\n\n\nCurrent\n\n\ntitleInfo\n is a repeatable element and the indexing will vary  depending upon the attribute \ntype\n\n\nFields Created\n\n\n\n\n\n\nmods_title_alt\n - a \nmultivalued\n, \nindexed\n field\nall \ntitle\n sub-elements of the set of \ntitleInfo\n which have the attribute \n@type=\"alternative\"\n\n\n\n\n\n\nother_title\n - a \nmultivalued\n, \nindexed\n field\nall \ntitle\n sub-elements of the set of \ntitleInfo\n which have the attribute \n@type!=\"alternative\"\n which are not the first element\n\n\n\n\n\n\nprimary_title\n - a \nsingle valued\n, \nsortable\n \nindexed\n field\n\ntitle\n sub-element of the the first \ntitleInfo\n\nin the set of \ntitleInfo\n which have the \nattribute \n@type!=\"alternative\"\n \n\n\n\n\n\n\nsubtitle\n - a \nsingle valued\n, \nsortable\n \nindexed\n field\n\nsubtitle\n sub-element of the the first \ntitleInfo\n\nin the set of \ntitleInfo\n which have the \nattribute \n@type!=\"alternative\"\n \n\n\n\n\n\n\npartnumber\n - a \nsingle valued\n, \nsortable\n \nindexed\n field\n\npartnumber\n sub-element of the the first \ntitleInfo\n\nin the set of \ntitleInfo\n which have the \nattribute \n@type!=\"alternative\"\n \n\n\n\n\n\n\npartname\n - a \nsingle valued\n, \nsortable\n \nindexed\n field\n\npartname\n sub-element of the the first \ntitleInfo\n\nin the set of \ntitleInfo\n which have the \nattribute \n@type!=\"alternative\"\n \n\n\n\n\n\n\nnonsort\n - a \nsingle valued\n, field\n\nnonsort\n sub-element of the the first \ntitleInfo\n\nin the set of \ntitleInfo\n which have the \nattribute \n@type!=\"alternative\"\n \n\n\n\n\n\n\nNotes for future\n\n\n\n\nOnly the \"primary\" title has it's non \ntitle\n subelements indexed.  This should change\n\n\nMore types are vailable than \ntype=\"alternative\"\n.  Such as \nabbreviated\n, \ntranslated\n, and \nuniform\n\n\nA composit title or \nmods_title_full\n could be created wich is an intelligent concatination of the sub-elements in a given \ntitleInfo\n element. It may be useful to sort on this.\n\n\nThe attribute \"@displayLabel\" should be respected and incorporated if present\n\n\nIf \n@type=\"translated\"\n then the \n@language\n attribute would be important\n\n\n\n\nDisplay\n\n\nCurrent\n\n\nUsually only the elements associated with the \nprimary_title\n are displayed they are a concatination of \n\n\n[nonsort] primary_title[: subtitle] [partname] [partnumber]", 
             "title": "titleInfo"
         }, 
         {
-            "location": "/elements/typeOfResource/", 
+            "location": "/elements/titleInfo/#indexing", 
             "text": "", 
+            "title": "Indexing"
+        }, 
+        {
+            "location": "/elements/titleInfo/#current", 
+            "text": "titleInfo  is a repeatable element and the indexing will vary  depending upon the attribute  type", 
+            "title": "Current"
+        }, 
+        {
+            "location": "/elements/titleInfo/#fields-created", 
+            "text": "mods_title_alt  - a  multivalued ,  indexed  field\nall  title  sub-elements of the set of  titleInfo  which have the attribute  @type=\"alternative\"    other_title  - a  multivalued ,  indexed  field\nall  title  sub-elements of the set of  titleInfo  which have the attribute  @type!=\"alternative\"  which are not the first element    primary_title  - a  single valued ,  sortable   indexed  field title  sub-element of the the first  titleInfo \nin the set of  titleInfo  which have the \nattribute  @type!=\"alternative\"      subtitle  - a  single valued ,  sortable   indexed  field subtitle  sub-element of the the first  titleInfo \nin the set of  titleInfo  which have the \nattribute  @type!=\"alternative\"      partnumber  - a  single valued ,  sortable   indexed  field partnumber  sub-element of the the first  titleInfo \nin the set of  titleInfo  which have the \nattribute  @type!=\"alternative\"      partname  - a  single valued ,  sortable   indexed  field partname  sub-element of the the first  titleInfo \nin the set of  titleInfo  which have the \nattribute  @type!=\"alternative\"      nonsort  - a  single valued , field nonsort  sub-element of the the first  titleInfo \nin the set of  titleInfo  which have the \nattribute  @type!=\"alternative\"", 
+            "title": "Fields Created"
+        }, 
+        {
+            "location": "/elements/titleInfo/#notes-for-future", 
+            "text": "Only the \"primary\" title has it's non  title  subelements indexed.  This should change  More types are vailable than  type=\"alternative\" .  Such as  abbreviated ,  translated , and  uniform  A composit title or  mods_title_full  could be created wich is an intelligent concatination of the sub-elements in a given  titleInfo  element. It may be useful to sort on this.  The attribute \"@displayLabel\" should be respected and incorporated if present  If  @type=\"translated\"  then the  @language  attribute would be important", 
+            "title": "Notes for future"
+        }, 
+        {
+            "location": "/elements/titleInfo/#display", 
+            "text": "", 
+            "title": "Display"
+        }, 
+        {
+            "location": "/elements/titleInfo/#current_1", 
+            "text": "Usually only the elements associated with the  primary_title  are displayed they are a concatination of   [nonsort] primary_title[: subtitle] [partname] [partnumber]", 
+            "title": "Current"
+        }, 
+        {
+            "location": "/elements/typeOfResource/", 
+            "text": "Indexing\n\n\nDisplay", 
             "title": "typeOfResource"
+        }, 
+        {
+            "location": "/elements/typeOfResource/#indexing", 
+            "text": "", 
+            "title": "Indexing"
+        }, 
+        {
+            "location": "/elements/typeOfResource/#display", 
+            "text": "", 
+            "title": "Display"
         }
     ]
 }
