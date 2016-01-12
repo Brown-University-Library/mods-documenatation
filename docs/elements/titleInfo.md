@@ -1,3 +1,16 @@
+#Intro
+
+**Element:** ```<titleInfo>```
+
+**Definition:** A word, phrase, character, or group of characters, normally appearing in a
+resource, that names it or the work contained in it.
+
+**Attributes:**
+``` type```, ``` authority```, ``` authorityURI, valueURI```, ``` usage```, ``` displayLabel```, ``` supplied```, ``` nameTitleGroup```, ``` altRepGroup```, ``` altFormat```, ``` contentType```, ``` xlink```, ``` ID```, ``` lang```, ``` xml:lang```, ``` script```, ``` transliteration```, ``` otherType```
+
+**Subelements:**
+```<title>```, ```<subTitle>```, ```<partNumber>```, ```<partName>```, ```<nonSort>```
+
 # Indexing
 
 ## Current
