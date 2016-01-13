@@ -35,7 +35,6 @@ associated in some way with the resource.
 
 ## Fields Created
 
-
 * ```name``` - *multivalued*, *indexed*  
 Looks at all ```namepart``` sub-element.  
 If the attribute ```@type!="date"``` then 
