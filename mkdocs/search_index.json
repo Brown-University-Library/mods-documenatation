@@ -17,13 +17,28 @@
         }, 
         {
             "location": "/elements/abstract/", 
-            "text": "Indexing\n\n\nDisplay", 
+            "text": "Intro\n\n\nElement:\n \nabstract\n \n\n\nDefinition:\n A summary of the content of the resource.\n\n\nAttributes:\n \n\ntype\n\n\ndisplayLabel\n\n\nshareable\n\n\naltRepGroup\n\n\naltFormat\n\n\ncontentType\n\n\nxlink\n\n\nlang\n\n\nxml:lang\n\n\nscript\n\n\ntransliteration\n\n\nSubelements:\n None\n\n\nIndexing\n\n\nFields Created\n\n\nDirect XPATH mappings\n\n\n\n\n\n\n\n\nINDEX_FIELD\n\n\nXPATH\n\n\n\n\n\n\n\n\n\n\nmods_abstract_ssim\n\n\nmods:abstract\n\n\n\n\n\n\nabstract\n\n\nmods:abstract\n\n\n\n\n\n\n\n\nDisplay", 
             "title": "Abstract"
+        }, 
+        {
+            "location": "/elements/abstract/#intro", 
+            "text": "Element:   abstract    Definition:  A summary of the content of the resource.  Attributes:   type  displayLabel  shareable  altRepGroup  altFormat  contentType  xlink  lang  xml:lang  script  transliteration  Subelements:  None", 
+            "title": "Intro"
         }, 
         {
             "location": "/elements/abstract/#indexing", 
             "text": "", 
             "title": "Indexing"
+        }, 
+        {
+            "location": "/elements/abstract/#fields-created", 
+            "text": "", 
+            "title": "Fields Created"
+        }, 
+        {
+            "location": "/elements/abstract/#direct-xpath-mappings", 
+            "text": "INDEX_FIELD  XPATH      mods_abstract_ssim  mods:abstract    abstract  mods:abstract", 
+            "title": "Direct XPATH mappings"
         }, 
         {
             "location": "/elements/abstract/#display", 
