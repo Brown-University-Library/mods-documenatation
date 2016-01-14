@@ -72,13 +72,23 @@
         }, 
         {
             "location": "/elements/classification/", 
-            "text": "Indexing\n\n\nDisplay", 
+            "text": "Intro\n\n\nElement:\n \nclassification\n\n\nDefinition:\n A designation applied to a resource that indicates the subject by applying a formal system of coding and organizing resources according to subject areas.\n\n\nAttributes:\n\n\nauthority\n\n\nauthorityURI\n\n\nvalueURI\n\n\nedition;edition displayLabel\n\n\nusage\n\n\naltRepGroup\n\n\nlang\n\n\nxml:lang\n\n\nscript\n\n\ntransliteration\n\n\ngenerator\n\n\nSubelements:\n None\n\n\nIndexing\n\n\nDirect XPATH mappings\n\n\n\n\n\n\n\n\nINDEX_FIELD\n\n\nXPATH\n\n\n\n\n\n\n\n\n\n\nmods_classificaiton_ssim\n\n\nmods:classificaiton\n\n\n\n\n\n\n\n\nDisplay", 
             "title": "Classification"
+        }, 
+        {
+            "location": "/elements/classification/#intro", 
+            "text": "Element:   classification  Definition:  A designation applied to a resource that indicates the subject by applying a formal system of coding and organizing resources according to subject areas.  Attributes:  authority  authorityURI  valueURI  edition;edition displayLabel  usage  altRepGroup  lang  xml:lang  script  transliteration  generator  Subelements:  None", 
+            "title": "Intro"
         }, 
         {
             "location": "/elements/classification/#indexing", 
             "text": "", 
             "title": "Indexing"
+        }, 
+        {
+            "location": "/elements/classification/#direct-xpath-mappings", 
+            "text": "INDEX_FIELD  XPATH      mods_classificaiton_ssim  mods:classificaiton", 
+            "title": "Direct XPATH mappings"
         }, 
         {
             "location": "/elements/classification/#display", 
@@ -87,12 +97,17 @@
         }, 
         {
             "location": "/elements/extension/", 
-            "text": "Indexing\n\n\nDisplay", 
+            "text": "Intro\n\n\nElement:\n \nextension\n\n\nDefinition:\n Provides additional information not covered by MODS.\n\n\nAttributes:\n\n\ndisplayLabel\n\n\nSubelements:\n None\n\n\nIndexing\n\n\nNot currently used or indexed\n\n\nDisplay", 
             "title": "Extension"
         }, 
         {
+            "location": "/elements/extension/#intro", 
+            "text": "Element:   extension  Definition:  Provides additional information not covered by MODS.  Attributes:  displayLabel  Subelements:  None", 
+            "title": "Intro"
+        }, 
+        {
             "location": "/elements/extension/#indexing", 
-            "text": "", 
+            "text": "Not currently used or indexed", 
             "title": "Indexing"
         }, 
         {
@@ -132,13 +147,28 @@
         }, 
         {
             "location": "/elements/identifier/", 
-            "text": "Indexing\n\n\nDisplay", 
+            "text": "Intro\n\n\nElement:\n \nidentifier\n\n\nDefinition:\n Contains a unique standard number or code that distinctively identifies a resource.\n\n\nAttributes:\n\n\ntype\n\n\ndisplayLabel\n\n\ninvalid\n\n\naltRepGroup\n\n\nlang\n\n\nxml:lang\n\n\nscript\n\n\ntransliteration\n\n\ntypeURI\n\n\nSubelements:\n None\n\n\nIndexing\n\n\nFields Created\n\n\nAll of the following identifiers do not have an attribute \n@type\n in the following set of values \nCOLID\n \nURI\n \ndoi\n \nMETSID\n\n\n\n\nidentifier\n - \nmultivalued\n, \nindexed\n\nThe value is the\ntext()\n value of the element\n\n\nmods_id_*_ssim\n - \nmultivalued\n, \nindexed\n\nThe \n*\n above is the slugified version of the attribute \n@displayLabel\n if available\nThe value is the\ntext()\n value of the element\n\n\nmods_id_*_ssim\n - \nmultivalued\n, \nindexed\n\nThe \n*\n above is the slugified version of the attribute \n@type\n if available\nThe value is the\ntext()\n value of the element\n\n\n\n\nDirect XPATH mappings\n\n\n\n\n\n\n\n\nINDEX_FIELD\n\n\nXPATH\n\n\n\n\n\n\n\n\n\n\nmods_id_doi_ssi\n\n\nmods:identifier[@type=\"doi\"]\n\n\n\n\n\n\nmods_id_mets_ssi\n\n\nmods:identifier[@type=\"METSID\"]\n\n\n\n\n\n\nmets_id\n\n\nmods:identifier[@type=\"METSID\"]\n\n\n\n\n\n\n\n\nDisplay", 
             "title": "Identifier"
+        }, 
+        {
+            "location": "/elements/identifier/#intro", 
+            "text": "Element:   identifier  Definition:  Contains a unique standard number or code that distinctively identifies a resource.  Attributes:  type  displayLabel  invalid  altRepGroup  lang  xml:lang  script  transliteration  typeURI  Subelements:  None", 
+            "title": "Intro"
         }, 
         {
             "location": "/elements/identifier/#indexing", 
             "text": "", 
             "title": "Indexing"
+        }, 
+        {
+            "location": "/elements/identifier/#fields-created", 
+            "text": "All of the following identifiers do not have an attribute  @type  in the following set of values  COLID   URI   doi   METSID   identifier  -  multivalued ,  indexed \nThe value is the text()  value of the element  mods_id_*_ssim  -  multivalued ,  indexed \nThe  *  above is the slugified version of the attribute  @displayLabel  if available\nThe value is the text()  value of the element  mods_id_*_ssim  -  multivalued ,  indexed \nThe  *  above is the slugified version of the attribute  @type  if available\nThe value is the text()  value of the element", 
+            "title": "Fields Created"
+        }, 
+        {
+            "location": "/elements/identifier/#direct-xpath-mappings", 
+            "text": "INDEX_FIELD  XPATH      mods_id_doi_ssi  mods:identifier[@type=\"doi\"]    mods_id_mets_ssi  mods:identifier[@type=\"METSID\"]    mets_id  mods:identifier[@type=\"METSID\"]", 
+            "title": "Direct XPATH mappings"
         }, 
         {
             "location": "/elements/identifier/#display", 
