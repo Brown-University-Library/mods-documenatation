@@ -95,7 +95,14 @@
         
             <ul>
             
+                <li class="toctree-l3"><a href="#intro">Intro</a></li>
+                
+            
                 <li class="toctree-l3"><a href="#indexing">Indexing</a></li>
+                
+                    <li><a class="toctree-l4" href="#fields-created">Fields Created</a></li>
+                
+                    <li><a class="toctree-l4" href="#notes-for-future">Notes for future</a></li>
                 
             
                 <li class="toctree-l3"><a href="#display">Display</a></li>
@@ -250,7 +257,37 @@
           <div role="main">
             <div class="section">
               
-                <h1 id="indexing">Indexing</h1>
+                <h1 id="intro">Intro</h1>
+<p><strong>Element:</strong> <code>&lt;genre&gt;</code></p>
+<p><strong>Definition:</strong> A term or terms that designate a category characterizing a particular style, form, or content, such as artistic, musical, literary composition, etc.</p>
+<p><strong>Attributes:</strong> 
+<code>type</code>
+<code>authority</code>
+<code>authorityURI</code>
+<code>valueURI</code>
+<code>usage</code>
+<code>displayLabel</code>
+<code>altRepGroup</code>
+<code>lang</code>
+<code>xml:lang</code>
+<code>script</code>
+<code>transliteration</code></p>
+<p><strong>Subelements:</strong> None</p>
+<h1 id="indexing">Indexing</h1>
+<h2 id="fields-created">Fields Created</h2>
+<ul>
+<li><code>genre</code> - <em>multivalued</em>, <em>indexed</em><br />
+The <code>text()</code> value of each <code>genre</code> element</li>
+<li><code>mods_genre_*_ssim</code> - <em>multivalued</em>, <em>indexed</em><br />
+If the <code>genre</code> element has an attribute <code>@autority</code>
+then the <code>*</code> in the above field is the slugified version of 
+<code>@authortiy</code>.<br />
+The value of the field is the <code>text()</code> value of the element.</li>
+</ul>
+<h2 id="notes-for-future">Notes for future</h2>
+<ul>
+<li><code>genre</code> should probably be <code>mods_genre_ssim</code> </li>
+</ul>
 <h1 id="display">Display</h1>
               
             </div>

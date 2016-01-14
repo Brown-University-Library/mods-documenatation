@@ -77,13 +77,28 @@
         }, 
         {
             "location": "/elements/genre/", 
-            "text": "Indexing\n\n\nDisplay", 
+            "text": "Intro\n\n\nElement:\n \ngenre\n\n\nDefinition:\n A term or terms that designate a category characterizing a particular style, form, or content, such as artistic, musical, literary composition, etc.\n\n\nAttributes:\n \n\ntype\n\n\nauthority\n\n\nauthorityURI\n\n\nvalueURI\n\n\nusage\n\n\ndisplayLabel\n\n\naltRepGroup\n\n\nlang\n\n\nxml:lang\n\n\nscript\n\n\ntransliteration\n\n\nSubelements:\n None\n\n\nIndexing\n\n\nFields Created\n\n\n\n\ngenre\n - \nmultivalued\n, \nindexed\n\nThe \ntext()\n value of each \ngenre\n element\n\n\nmods_genre_*_ssim\n - \nmultivalued\n, \nindexed\n\nIf the \ngenre\n element has an attribute \n@autority\n\nthen the \n*\n in the above field is the slugified version of \n\n@authortiy\n.\n\nThe value of the field is the \ntext()\n value of the element.\n\n\n\n\nNotes for future\n\n\n\n\ngenre\n should probably be \nmods_genre_ssim\n \n\n\n\n\nDisplay", 
             "title": "Genre"
+        }, 
+        {
+            "location": "/elements/genre/#intro", 
+            "text": "Element:   genre  Definition:  A term or terms that designate a category characterizing a particular style, form, or content, such as artistic, musical, literary composition, etc.  Attributes:   type  authority  authorityURI  valueURI  usage  displayLabel  altRepGroup  lang  xml:lang  script  transliteration  Subelements:  None", 
+            "title": "Intro"
         }, 
         {
             "location": "/elements/genre/#indexing", 
             "text": "", 
             "title": "Indexing"
+        }, 
+        {
+            "location": "/elements/genre/#fields-created", 
+            "text": "genre  -  multivalued ,  indexed \nThe  text()  value of each  genre  element  mods_genre_*_ssim  -  multivalued ,  indexed \nIf the  genre  element has an attribute  @autority \nthen the  *  in the above field is the slugified version of  @authortiy . \nThe value of the field is the  text()  value of the element.", 
+            "title": "Fields Created"
+        }, 
+        {
+            "location": "/elements/genre/#notes-for-future", 
+            "text": "genre  should probably be  mods_genre_ssim", 
+            "title": "Notes for future"
         }, 
         {
             "location": "/elements/genre/#display", 
