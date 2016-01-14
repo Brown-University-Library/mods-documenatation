@@ -172,6 +172,9 @@
         
             <ul>
             
+                <li class="toctree-l3"><a href="#intro">Intro</a></li>
+                
+            
                 <li class="toctree-l3"><a href="#indexing">Indexing</a></li>
                 
                     <li><a class="toctree-l4" href="#fields-created">Fields Created</a></li>
@@ -256,7 +259,35 @@
           <div role="main">
             <div class="section">
               
-                <h1 id="indexing">Indexing</h1>
+                <h1 id="intro">Intro</h1>
+<p><strong>Element:</strong> <code>&lt;subject&gt;</code></p>
+<p><strong>Definition:</strong>
+A term or phrase representing the primary topic(s) on which a work is focused.</p>
+<p><strong>Attributes:</strong>
+<code>authority</code>
+<code>authorityURI</code>
+<code>valueURI</code>
+<code>usage</code>
+<code>displayLabel</code>
+<code>altRepGroup</code>
+<code>xlink</code>
+<code>ID</code>
+<code>lang</code>
+<code>xml:lang</code>
+<code>script</code>
+<code>transliteration</code></p>
+<p><strong>Subelements:</strong>
+<code>&lt;topic&gt;</code>
+<code>&lt;geographic&gt;</code>
+<code>&lt;temporal&gt;</code>
+<code>&lt;titleInfo&gt;</code>
+<code>&lt;titleInfoname&gt;</code>
+<code>&lt;genre&gt;</code>
+<code>&lt;hierarchicalGeographic&gt;</code>
+<code>&lt;cartographics&gt;</code>
+<code>&lt;geographicCode&gt;</code>
+<code>&lt;occupation&gt;</code></p>
+<h1 id="indexing">Indexing</h1>
 <p>In the following indexed fields, there is frequently the idea of a <code>subject_label</code><br />
 The <code>subject_label</code> is constructed by looking at the attribute <code>@displayLabel</code><br />
 If it ends with either <code>:</code>, <code>?</code>, or <code>!</code>:<br />
@@ -290,32 +321,100 @@ where <code>subject_value</code> is value of the respective <code>topic</code> o
 </li>
 </ul>
 <h2 id="direct-xpath-mappings">Direct XPATH mappings</h2>
-<ul>
-<li>INDEX_FIELD, XPATH</li>
-<li><code>subject</code>, <code>mods:subject/mods:name/mods:namePart[not(@type)]</code></li>
-<li><code>subject</code>, <code>mods:subject/mods:name/mods:role/mods:roleTerm[@type="text"]</code></li>
-<li><code>mods_subject_title_ssim</code>, <code>mods:subject/mods:titleInfo/mods:title</code></li>
-<li><code>other_title</code>, <code>mods:subject/mods:titleInfo/mods:title</code></li>
-<li><code>subject</code>, <code>mods:subject/mods:titleInfo/mods:title</code></li>
-<li><code>subject</code>, <code>mods:subject/mods:cartographics</code></li>
-<li><code>mods_cartographics_ssim</code>, <code>mods:subject/mods:cartographics</code></li>
-<li><code>subject</code>, <code>mods:subject/mods:geographic</code></li>
-<li><code>mods_geographic_ssim</code>, <code>mods:subject/mods:geographic</code></li>
-<li><code>mods_hierarchical_geographic_continent_ssim</code>, <code>mods:subject/mods:hierarchicalGeographic/mods:continent</code></li>
-<li><code>mods_hierarchical_geographic_country_ssim</code>, <code>mods:subject/mods:hierarchicalGeographic/mods:country</code></li>
-<li><code>mods_hierarchical_geographic_region_ssim</code>, <code>mods:subject/mods:hierarchicalGeographic/mods:region</code></li>
-<li><code>mods_hierarchical_geographic_province_ssim</code>, <code>mods:subject/mods:hierarchicalGeographic/mods:province</code></li>
-<li><code>mods_hierarchical_geographic_state_ssim</code>, <code>mods:subject/mods:hierarchicalGeographic/mods:state</code></li>
-<li><code>mods_hierarchical_geographic_territory_ssim</code>, <code>mods:subject/mods:hierarchicalGeographic/mods:territory</code></li>
-<li><code>mods_hierarchical_geographic_county_ssim</code>, <code>mods:subject/mods:hierarchicalGeographic/mods:county</code></li>
-<li><code>mods_hierarchical_geographic_city_ssim</code>, <code>mods:subject/mods:hierarchicalGeographic/mods:city</code></li>
-<li><code>mods_hierarchical_geographic_city_section_ssim</code>, <code>mods:subject/mods:hierarchicalGeographic/mods:citySection</code></li>
-<li><code>mods_hierarchical_geographic_island_ssim</code>, <code>mods:subject/mods:hierarchicalGeographic/mods:island</code></li>
-<li><code>mods_hierarchical_geographic_area_ssim</code>, <code>mods:subject/mods:hierarchicalGeographic/mods:area</code></li>
-</ul>
+<table>
+<thead>
+<tr>
+<th>INDEX_FIELD</th>
+<th>XPATH</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>subject</code></td>
+<td><code>mods:subject/mods:name/mods:namePart[not(@type)]</code></td>
+</tr>
+<tr>
+<td><code>subject</code></td>
+<td><code>mods:subject/mods:name/mods:role/mods:roleTerm[@type="text"]</code></td>
+</tr>
+<tr>
+<td><code>subject</code></td>
+<td><code>mods:subject/mods:titleInfo/mods:title</code></td>
+</tr>
+<tr>
+<td><code>subject</code></td>
+<td><code>mods:subject/mods:cartographics</code></td>
+</tr>
+<tr>
+<td><code>subject</code></td>
+<td><code>mods:subject/mods:geographic</code></td>
+</tr>
+<tr>
+<td><code>other_title</code></td>
+<td><code>mods:subject/mods:titleInfo/mods:title</code></td>
+</tr>
+<tr>
+<td><code>mods_subject_title_ssim</code></td>
+<td><code>mods:subject/mods:titleInfo/mods:title</code></td>
+</tr>
+<tr>
+<td><code>mods_cartographics_ssim</code></td>
+<td><code>mods:subject/mods:cartographics</code></td>
+</tr>
+<tr>
+<td><code>mods_geographic_ssim</code></td>
+<td><code>mods:subject/mods:geographic</code></td>
+</tr>
+<tr>
+<td><code>mods_hierarchical_geographic_continent_ssim</code></td>
+<td><code>mods:subject/mods:hierarchicalGeographic/mods:continent</code></td>
+</tr>
+<tr>
+<td><code>mods_hierarchical_geographic_country_ssim</code></td>
+<td><code>mods:subject/mods:hierarchicalGeographic/mods:country</code></td>
+</tr>
+<tr>
+<td><code>mods_hierarchical_geographic_region_ssim</code></td>
+<td><code>mods:subject/mods:hierarchicalGeographic/mods:region</code></td>
+</tr>
+<tr>
+<td><code>mods_hierarchical_geographic_province_ssim</code></td>
+<td><code>mods:subject/mods:hierarchicalGeographic/mods:province</code></td>
+</tr>
+<tr>
+<td><code>mods_hierarchical_geographic_state_ssim</code></td>
+<td><code>mods:subject/mods:hierarchicalGeographic/mods:state</code></td>
+</tr>
+<tr>
+<td><code>mods_hierarchical_geographic_territory_ssim</code></td>
+<td><code>mods:subject/mods:hierarchicalGeographic/mods:territory</code></td>
+</tr>
+<tr>
+<td><code>mods_hierarchical_geographic_county_ssim</code></td>
+<td><code>mods:subject/mods:hierarchicalGeographic/mods:county</code></td>
+</tr>
+<tr>
+<td><code>mods_hierarchical_geographic_city_ssim</code></td>
+<td><code>mods:subject/mods:hierarchicalGeographic/mods:city</code></td>
+</tr>
+<tr>
+<td><code>mods_hierarchical_geographic_city_section_ssim</code></td>
+<td><code>mods:subject/mods:hierarchicalGeographic/mods:citySection</code></td>
+</tr>
+<tr>
+<td><code>mods_hierarchical_geographic_island_ssim</code></td>
+<td><code>mods:subject/mods:hierarchicalGeographic/mods:island</code></td>
+</tr>
+<tr>
+<td><code>mods_hierarchical_geographic_area_ssim</code></td>
+<td><code>mods:subject/mods:hierarchicalGeographic/mods:area</code></td>
+</tr>
+</tbody>
+</table>
 <h2 id="notes-for-future">Notes for future</h2>
 <ul>
 <li>Could retire <code>keyword</code> in the indexer.</li>
+<li><code>other_title</code> and <code>mods_subject_title_ssim</code> index the same thing</li>
 </ul>
 <h1 id="display">Display</h1>
               
