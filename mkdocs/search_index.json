@@ -47,13 +47,23 @@
         }, 
         {
             "location": "/elements/accessCondition/", 
-            "text": "Indexing\n\n\nDisplay", 
+            "text": "Intro\n\n\nElement:\n \naccessCondition\n\n\nDefinition:\n Information about restrictions imposed on access to a resource.\n\n\nAttributes:\n\n\ntype\n\n\ndisplayLabel\n\n\naltRepGroup\n\n\naltFormat\n\n\ncontentType\n\n\nxlink\n\n\nlang\n\n\nxml:lang\n\n\nscript\n\n\ntransliteration\n\n\nSubelements:\n None\n\n\nIndexing\n\n\nFields Created\n\n\n\n\nmods_access_condition_use_text_tsim\n - \nmultivalued\n, \nindexed\n\nIf the attribute \n@type=='use and reproduction'\n then the value is \ntext()\n value of the element\n\n\nmods_access_condition_use_link_ssim\n - \nmultivalued\n, \nindexed\n\nIf the attribute \n@type=='use and reproduction'\n then the value is \n@xlink:href\n value of the element\n\n\nmods_access_condition_use_logo_ssim\n - \nmultivalued\n, \nindexed\n\nIf the attribute \n@type=='logo'\n then the value is \n@xlink:href\n value of the element\n\n\n\n\nDisplay", 
             "title": "accessCondition"
+        }, 
+        {
+            "location": "/elements/accessCondition/#intro", 
+            "text": "Element:   accessCondition  Definition:  Information about restrictions imposed on access to a resource.  Attributes:  type  displayLabel  altRepGroup  altFormat  contentType  xlink  lang  xml:lang  script  transliteration  Subelements:  None", 
+            "title": "Intro"
         }, 
         {
             "location": "/elements/accessCondition/#indexing", 
             "text": "", 
             "title": "Indexing"
+        }, 
+        {
+            "location": "/elements/accessCondition/#fields-created", 
+            "text": "mods_access_condition_use_text_tsim  -  multivalued ,  indexed \nIf the attribute  @type=='use and reproduction'  then the value is  text()  value of the element  mods_access_condition_use_link_ssim  -  multivalued ,  indexed \nIf the attribute  @type=='use and reproduction'  then the value is  @xlink:href  value of the element  mods_access_condition_use_logo_ssim  -  multivalued ,  indexed \nIf the attribute  @type=='logo'  then the value is  @xlink:href  value of the element", 
+            "title": "Fields Created"
         }, 
         {
             "location": "/elements/accessCondition/#display", 

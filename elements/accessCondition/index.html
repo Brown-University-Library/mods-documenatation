@@ -74,7 +74,12 @@
         
             <ul>
             
+                <li class="toctree-l3"><a href="#intro">Intro</a></li>
+                
+            
                 <li class="toctree-l3"><a href="#indexing">Indexing</a></li>
+                
+                    <li><a class="toctree-l4" href="#fields-created">Fields Created</a></li>
                 
             
                 <li class="toctree-l3"><a href="#display">Display</a></li>
@@ -250,7 +255,31 @@
           <div role="main">
             <div class="section">
               
-                <h1 id="indexing">Indexing</h1>
+                <h1 id="intro">Intro</h1>
+<p><strong>Element:</strong> <code>&lt;accessCondition&gt;</code></p>
+<p><strong>Definition:</strong> Information about restrictions imposed on access to a resource.</p>
+<p><strong>Attributes:</strong>
+<code>type</code>
+<code>displayLabel</code>
+<code>altRepGroup</code>
+<code>altFormat</code>
+<code>contentType</code>
+<code>xlink</code>
+<code>lang</code>
+<code>xml:lang</code>
+<code>script</code>
+<code>transliteration</code></p>
+<p><strong>Subelements:</strong> None</p>
+<h1 id="indexing">Indexing</h1>
+<h2 id="fields-created">Fields Created</h2>
+<ul>
+<li><code>mods_access_condition_use_text_tsim</code> - <em>multivalued</em>, <em>indexed</em><br />
+If the attribute <code>@type=='use and reproduction'</code> then the value is <code>text()</code> value of the element</li>
+<li><code>mods_access_condition_use_link_ssim</code> - <em>multivalued</em>, <em>indexed</em><br />
+If the attribute <code>@type=='use and reproduction'</code> then the value is <code>@xlink:href</code> value of the element</li>
+<li><code>mods_access_condition_use_logo_ssim</code> - <em>multivalued</em>, <em>indexed</em><br />
+If the attribute <code>@type=='logo'</code> then the value is <code>@xlink:href</code> value of the element</li>
+</ul>
 <h1 id="display">Display</h1>
               
             </div>
