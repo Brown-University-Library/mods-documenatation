@@ -177,12 +177,17 @@
         }, 
         {
             "location": "/elements/language/", 
-            "text": "Indexing\n\n\nDisplay", 
+            "text": "Intro\n\n\nElement:\n \nlanguage\n\n\nDefinition:\n A designation of the language in which the content of a resource is expressed.\n\n\nAttributes:\n\n\nusage\n\n\nobjectPart\n\n\ndisplayLabel\n\n\naltRepGroup\n\n\nlang\n\n\nxml:lang\n\n\nscript\n\n\ntransliteration:\n\n\nSubelements:\n \nlanguageTerm\n \nscriptTerm\n\n\nIndexing\n\n\nNot currently used or indexed\n\n\nDisplay", 
             "title": "Language"
         }, 
         {
+            "location": "/elements/language/#intro", 
+            "text": "Element:   language  Definition:  A designation of the language in which the content of a resource is expressed.  Attributes:  usage  objectPart  displayLabel  altRepGroup  lang  xml:lang  script  transliteration:  Subelements:   languageTerm   scriptTerm", 
+            "title": "Intro"
+        }, 
+        {
             "location": "/elements/language/#indexing", 
-            "text": "", 
+            "text": "Not currently used or indexed", 
             "title": "Indexing"
         }, 
         {
@@ -192,12 +197,17 @@
         }, 
         {
             "location": "/elements/location/", 
-            "text": "Indexing\n\n\nDisplay", 
+            "text": "Intro\n\n\nElement:\n \nlocation\n\n\nDefinition:\n A designation of the language in which the content of a resource is expressed.\n\n\nAttributes:\n\n\ndisplayLabel\n\n\naltRepGroup\n\n\nlang\n\n\nxml:lang\n\n\nscript\n\n\ntransliteration\n\n\nSubelements:\n \n\nphysicalLocaiton\n\n\nshelfLocator\n\n\nurl\n\n\nholdingSimple\n\n\nholdingExternal\n\n\nIndexing\n\n\nNot currently used or indexed\n\n\nDisplay", 
             "title": "Location"
         }, 
         {
+            "location": "/elements/location/#intro", 
+            "text": "Element:   location  Definition:  A designation of the language in which the content of a resource is expressed.  Attributes:  displayLabel  altRepGroup  lang  xml:lang  script  transliteration  Subelements:   physicalLocaiton  shelfLocator  url  holdingSimple  holdingExternal", 
+            "title": "Intro"
+        }, 
+        {
             "location": "/elements/location/#indexing", 
-            "text": "", 
+            "text": "Not currently used or indexed", 
             "title": "Indexing"
         }, 
         {
