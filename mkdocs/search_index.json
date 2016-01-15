@@ -247,13 +247,23 @@
         }, 
         {
             "location": "/elements/note/", 
-            "text": "Indexing\n\n\nDisplay", 
+            "text": "Intro\n\n\nElement:\n \nnote\n\n\nDefinition:\n General textual information relating to a resource.\n\n\nAttributes:\n\n\ntype\n\n\ndisplayLabel\n\n\naltRepGroup\n\n\nxlink\n\n\nID\n\n\nlang\n\n\nxml:lang\n\n\nscript\n\n\ntransliteration\n\n\ntypeURI\n\n\nSubelements:\n None\n\n\nIndexing\n\n\nFields Created\n\n\nIn the following indexed fields, there is frequently the idea of a \nnote_label\n\nThe \nnote_label\n is constructed by looking at the attribute \n@displayLabel\n\nIf it ends with either \n:\n, \n?\n, or \n!\n:\n\nthe label is used as is.\n\nOtherwise a \n:\n is added to create the \nnote_label\n\n\n\n\nnote\n - \nmultivalued\n, \nindexed\n\nThe value is constructed as follows:\n\n\n[note_label ]note_value\n\nwhere \nnote_value\n is the\ntext()\n value of the element\n\n\nmods_note_*_ssim\n - \nmultivalued\n, \nindexed\n\nThe \n*\n above is the slugified version of the attribute \n@displayLabel\n if available\nThe value is the\ntext()\n value of the element\n\n\nmods_note_*_ssim\n - \nmultivalued\n, \nindexed\n\nThe \n*\n above is the slugified version of the attribute \n@type\n if available\nThe value is the\ntext()\n value of the element\n\n\n\n\nDisplay", 
             "title": "Note"
+        }, 
+        {
+            "location": "/elements/note/#intro", 
+            "text": "Element:   note  Definition:  General textual information relating to a resource.  Attributes:  type  displayLabel  altRepGroup  xlink  ID  lang  xml:lang  script  transliteration  typeURI  Subelements:  None", 
+            "title": "Intro"
         }, 
         {
             "location": "/elements/note/#indexing", 
             "text": "", 
             "title": "Indexing"
+        }, 
+        {
+            "location": "/elements/note/#fields-created", 
+            "text": "In the following indexed fields, there is frequently the idea of a  note_label \nThe  note_label  is constructed by looking at the attribute  @displayLabel \nIf it ends with either  : ,  ? , or  ! : \nthe label is used as is. \nOtherwise a  :  is added to create the  note_label   note  -  multivalued ,  indexed \nThe value is constructed as follows:  [note_label ]note_value \nwhere  note_value  is the text()  value of the element  mods_note_*_ssim  -  multivalued ,  indexed \nThe  *  above is the slugified version of the attribute  @displayLabel  if available\nThe value is the text()  value of the element  mods_note_*_ssim  -  multivalued ,  indexed \nThe  *  above is the slugified version of the attribute  @type  if available\nThe value is the text()  value of the element", 
+            "title": "Fields Created"
         }, 
         {
             "location": "/elements/note/#display", 

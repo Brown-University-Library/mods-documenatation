@@ -130,7 +130,12 @@
         
             <ul>
             
+                <li class="toctree-l3"><a href="#intro">Intro</a></li>
+                
+            
                 <li class="toctree-l3"><a href="#indexing">Indexing</a></li>
+                
+                    <li><a class="toctree-l4" href="#fields-created">Fields Created</a></li>
                 
             
                 <li class="toctree-l3"><a href="#display">Display</a></li>
@@ -250,7 +255,40 @@
           <div role="main">
             <div class="section">
               
-                <h1 id="indexing">Indexing</h1>
+                <h1 id="intro">Intro</h1>
+<p><strong>Element:</strong> <code>&lt;note&gt;</code></p>
+<p><strong>Definition:</strong> General textual information relating to a resource.</p>
+<p><strong>Attributes:</strong>
+<code>type</code>
+<code>displayLabel</code>
+<code>altRepGroup</code>
+<code>xlink</code>
+<code>ID</code>
+<code>lang</code>
+<code>xml:lang</code>
+<code>script</code>
+<code>transliteration</code>
+<code>typeURI</code></p>
+<p><strong>Subelements:</strong> None</p>
+<h1 id="indexing">Indexing</h1>
+<h2 id="fields-created">Fields Created</h2>
+<p>In the following indexed fields, there is frequently the idea of a <code>note_label</code><br />
+The <code>note_label</code> is constructed by looking at the attribute <code>@displayLabel</code><br />
+If it ends with either <code>:</code>, <code>?</code>, or <code>!</code>:<br />
+the label is used as is.<br />
+Otherwise a <code>:</code> is added to create the <code>note_label</code></p>
+<ul>
+<li><code>note</code> - <em>multivalued</em>, <em>indexed</em><br />
+The value is constructed as follows:<br />
+<code>[note_label ]note_value</code>
+where <code>note_value</code> is the<code>text()</code> value of the element</li>
+<li><code>mods_note_*_ssim</code> - <em>multivalued</em>, <em>indexed</em><br />
+The <code>*</code> above is the slugified version of the attribute <code>@displayLabel</code> if available
+The value is the<code>text()</code> value of the element</li>
+<li><code>mods_note_*_ssim</code> - <em>multivalued</em>, <em>indexed</em><br />
+The <code>*</code> above is the slugified version of the attribute <code>@type</code> if available
+The value is the<code>text()</code> value of the element</li>
+</ul>
 <h1 id="display">Display</h1>
               
             </div>
