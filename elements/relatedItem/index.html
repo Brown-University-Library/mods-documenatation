@@ -165,7 +165,14 @@
         
             <ul>
             
+                <li class="toctree-l3"><a href="#intro">Intro</a></li>
+                
+            
                 <li class="toctree-l3"><a href="#indexing">Indexing</a></li>
+                
+                    <li><a class="toctree-l4" href="#fields-created">Fields Created</a></li>
+                
+                    <li><a class="toctree-l4" href="#direct-xpath-mappings">Direct XPATH mappings</a></li>
                 
             
                 <li class="toctree-l3"><a href="#display">Display</a></li>
@@ -250,7 +257,62 @@
           <div role="main">
             <div class="section">
               
-                <h1 id="indexing">Indexing</h1>
+                <h1 id="intro">Intro</h1>
+<p><strong>Element:</strong> <code>&lt;relatedItem&gt;</code></p>
+<p><strong>Definition:</strong>
+Information that identifies other resources related to the one being described.</p>
+<p><strong>Attributes:</strong>
+<code>type</code>
+<code>xlink:href</code>
+<code>displayLabel</code>
+<code>ID</code>
+<code>otherType</code>
+<code>otherTypeAuth</code>
+<code>otherTypeAuthURI</code>
+<code>otherTypeURI</code></p>
+<p><strong>Subelements:</strong>
+All MODS elements can appear as subelements.</p>
+<h1 id="indexing">Indexing</h1>
+<h2 id="fields-created">Fields Created</h2>
+<ul>
+<li><code>collection_title</code> - <em>indexed</em> <em>multivalued</em><br />
+If a <code>&lt;relatedItem&gt;</code> has a <code>&lt;titleInfo&gt;&lt;title&gt;</code> sublement <strong>AND</strong> the attribute
+<code>@type=='host'</code> <strong>AND</strong> the attribute <code>@displayLabel</code> starts with <code>"Collection"</code><br />
+the value is <code>text()</code> value of the <code>&lt;title&gt;</code></li>
+<li>
+<p><code>other_title</code> - <em>indexed</em> <em>multivalued</em><br />
+If a <code>&lt;relatedItem&gt;</code> has a <code>&lt;titleInfo&gt;&lt;title&gt;</code> sublement that does not 
+fulfill that of the <code>collection_title</code> field above:<br />
+the value is <code>text()</code> value of the <code>&lt;title&gt;</code></p>
+</li>
+<li>
+<p><code>mods_related_id_ssim</code>- <em>indexed</em> <em>multivalued</em><br />
+If a <code>&lt;relatedItem&gt;</code> has a <code>&lt;identifier&gt;</code> sublement
+the value is <code>text()</code> value of the <code>&lt;identifier&gt;</code></p>
+</li>
+<li><code>mods_related_id_*_ssim</code>- <em>indexed</em> <em>multivalued</em><br />
+If a <code>&lt;relatedItem&gt;</code> has a <code>&lt;identifier&gt;</code> sublement with a <code>@type</code> attribute:<br />
+the <code>*</code> above is the slugified version of the <code>@type</code> attribute<br />
+the value is <code>text()</code> value of the <code>&lt;identifier&gt;</code></li>
+<li><code>mods_related_name_ssim</code>- <em>indexed</em> <em>multivalued</em><br />
+If a <code>&lt;relatedItem&gt;</code> has a <code>&lt;name&gt;&lt;namePart&gt;</code> sublement
+the value is <code>text()</code> value of the <code>&lt;namePart&gt;</code></li>
+</ul>
+<h2 id="direct-xpath-mappings">Direct XPATH mappings</h2>
+<table>
+<thead>
+<tr>
+<th>INDEX_FIELD</th>
+<th>XPATH</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>mods_collection_id</code></td>
+<td><code>mods:relatedItem[@type="host" and starts-with(@displayLabel,"Collection")]/mods:identifier[@type = "COLID"]</code></td>
+</tr>
+</tbody>
+</table>
 <h1 id="display">Display</h1>
               
             </div>

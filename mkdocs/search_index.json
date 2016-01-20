@@ -367,13 +367,28 @@
         }, 
         {
             "location": "/elements/relatedItem/", 
-            "text": "Indexing\n\n\nDisplay", 
+            "text": "Intro\n\n\nElement:\n \nrelatedItem\n\n\nDefinition:\n\nInformation that identifies other resources related to the one being described.\n\n\nAttributes:\n\n\ntype\n\n\nxlink:href\n\n\ndisplayLabel\n\n\nID\n\n\notherType\n\n\notherTypeAuth\n\n\notherTypeAuthURI\n\n\notherTypeURI\n\n\nSubelements:\n\nAll MODS elements can appear as subelements.\n\n\nIndexing\n\n\nFields Created\n\n\n\n\ncollection_title\n - \nindexed\n \nmultivalued\n\nIf a \nrelatedItem\n has a \ntitleInfo\ntitle\n sublement \nAND\n the attribute\n\n@type=='host'\n \nAND\n the attribute \n@displayLabel\n starts with \n\"Collection\"\n\nthe value is \ntext()\n value of the \ntitle\n\n\n\n\nother_title\n - \nindexed\n \nmultivalued\n\nIf a \nrelatedItem\n has a \ntitleInfo\ntitle\n sublement that does not \nfulfill that of the \ncollection_title\n field above:\n\nthe value is \ntext()\n value of the \ntitle\n\n\n\n\n\n\nmods_related_id_ssim\n- \nindexed\n \nmultivalued\n\nIf a \nrelatedItem\n has a \nidentifier\n sublement\nthe value is \ntext()\n value of the \nidentifier\n\n\n\n\nmods_related_id_*_ssim\n- \nindexed\n \nmultivalued\n\nIf a \nrelatedItem\n has a \nidentifier\n sublement with a \n@type\n attribute:\n\nthe \n*\n above is the slugified version of the \n@type\n attribute\n\nthe value is \ntext()\n value of the \nidentifier\n\n\nmods_related_name_ssim\n- \nindexed\n \nmultivalued\n\nIf a \nrelatedItem\n has a \nname\nnamePart\n sublement\nthe value is \ntext()\n value of the \nnamePart\n\n\n\n\nDirect XPATH mappings\n\n\n\n\n\n\n\n\nINDEX_FIELD\n\n\nXPATH\n\n\n\n\n\n\n\n\n\n\nmods_collection_id\n\n\nmods:relatedItem[@type=\"host\" and starts-with(@displayLabel,\"Collection\")]/mods:identifier[@type = \"COLID\"]\n\n\n\n\n\n\n\n\nDisplay", 
             "title": "relatedItem"
+        }, 
+        {
+            "location": "/elements/relatedItem/#intro", 
+            "text": "Element:   relatedItem  Definition: \nInformation that identifies other resources related to the one being described.  Attributes:  type  xlink:href  displayLabel  ID  otherType  otherTypeAuth  otherTypeAuthURI  otherTypeURI  Subelements: \nAll MODS elements can appear as subelements.", 
+            "title": "Intro"
         }, 
         {
             "location": "/elements/relatedItem/#indexing", 
             "text": "", 
             "title": "Indexing"
+        }, 
+        {
+            "location": "/elements/relatedItem/#fields-created", 
+            "text": "collection_title  -  indexed   multivalued \nIf a  relatedItem  has a  titleInfo title  sublement  AND  the attribute @type=='host'   AND  the attribute  @displayLabel  starts with  \"Collection\" \nthe value is  text()  value of the  title   other_title  -  indexed   multivalued \nIf a  relatedItem  has a  titleInfo title  sublement that does not \nfulfill that of the  collection_title  field above: \nthe value is  text()  value of the  title    mods_related_id_ssim -  indexed   multivalued \nIf a  relatedItem  has a  identifier  sublement\nthe value is  text()  value of the  identifier   mods_related_id_*_ssim -  indexed   multivalued \nIf a  relatedItem  has a  identifier  sublement with a  @type  attribute: \nthe  *  above is the slugified version of the  @type  attribute \nthe value is  text()  value of the  identifier  mods_related_name_ssim -  indexed   multivalued \nIf a  relatedItem  has a  name namePart  sublement\nthe value is  text()  value of the  namePart", 
+            "title": "Fields Created"
+        }, 
+        {
+            "location": "/elements/relatedItem/#direct-xpath-mappings", 
+            "text": "INDEX_FIELD  XPATH      mods_collection_id  mods:relatedItem[@type=\"host\" and starts-with(@displayLabel,\"Collection\")]/mods:identifier[@type = \"COLID\"]", 
+            "title": "Direct XPATH mappings"
         }, 
         {
             "location": "/elements/relatedItem/#display", 
@@ -417,13 +432,23 @@
         }, 
         {
             "location": "/elements/tableOfContents/", 
-            "text": "Indexing\n\n\nDisplay", 
+            "text": "Intro\n\n\nElement:\n \ntableOfContents\n\n\nDefinition:\n \nA description of the contents of a resource.\n\n\nAttributes:\n\n\ntype\n\n\ndisplayLabel\n\n\nshareable\n\n\naltRepGroup\n\n\naltFormat\n\n\ncontentType\n\n\nxlink\n\n\nlang\n\n\nxml:lang\n\n\nscript\n\n\ntransliteration\n\n\nSubelements:\n\nNone\n\n\nIndexing\n\n\nDirect XPATH mappings\n\n\n\n\n\n\n\n\nINDEX_FIELD\n\n\nXPATH\n\n\n\n\n\n\n\n\n\n\nmods_table_of_contents_ssim\n\n\nmods:tableOfContents\n\n\n\n\n\n\n\n\nDisplay", 
             "title": "tableOfContents"
+        }, 
+        {
+            "location": "/elements/tableOfContents/#intro", 
+            "text": "Element:   tableOfContents  Definition:  \nA description of the contents of a resource.  Attributes:  type  displayLabel  shareable  altRepGroup  altFormat  contentType  xlink  lang  xml:lang  script  transliteration  Subelements: \nNone", 
+            "title": "Intro"
         }, 
         {
             "location": "/elements/tableOfContents/#indexing", 
             "text": "", 
             "title": "Indexing"
+        }, 
+        {
+            "location": "/elements/tableOfContents/#direct-xpath-mappings", 
+            "text": "INDEX_FIELD  XPATH      mods_table_of_contents_ssim  mods:tableOfContents", 
+            "title": "Direct XPATH mappings"
         }, 
         {
             "location": "/elements/tableOfContents/#display", 
@@ -432,12 +457,17 @@
         }, 
         {
             "location": "/elements/targetAudience/", 
-            "text": "Indexing\n\n\nDisplay", 
+            "text": "Intro\n\n\nElement:\n \ntargetAudience\n\n\nDefinition:\n \nA description of the intellectual level of the audience for which the \nresource is intended\n\n\nAttributes:\n\n\nauthority\n\n\nauthorityURI\n\n\nvalueURI\n\n\ndisplayLabel\n\n\naltRepGroup\n\n\nlang\n\n\nscript\n\n\ntransliteration\n\n\nSubelements:\n\nNone\n\n\nIndexing\n\n\nNot currently used or indexed\n\n\nDisplay", 
             "title": "targetAudience"
         }, 
         {
+            "location": "/elements/targetAudience/#intro", 
+            "text": "Element:   targetAudience  Definition:  \nA description of the intellectual level of the audience for which the \nresource is intended  Attributes:  authority  authorityURI  valueURI  displayLabel  altRepGroup  lang  script  transliteration  Subelements: \nNone", 
+            "title": "Intro"
+        }, 
+        {
             "location": "/elements/targetAudience/#indexing", 
-            "text": "", 
+            "text": "Not currently used or indexed", 
             "title": "Indexing"
         }, 
         {
@@ -447,12 +477,12 @@
         }, 
         {
             "location": "/elements/titleInfo/", 
-            "text": "Intro\n\n\nElement:\n \ntitleInfo\n\n\nDefinition:\n A word, phrase, character, or group of characters, normally appearing in a\nresource, that names it or the work contained in it.\n\n\nAttributes:\n\n\ntype\n, \nauthority\n, \nauthorityURI, valueURI\n, \nusage\n, \ndisplayLabel\n, \nsupplied\n, \nnameTitleGroup\n, \naltRepGroup\n, \naltFormat\n, \ncontentType\n, \nxlink\n, \nID\n, \nlang\n, \nxml:lang\n, \nscript\n, \ntransliteration\n, \notherType\n\n\nSubelements:\n\n\ntitle\n, \nsubTitle\n, \npartNumber\n, \npartName\n, \nnonSort\n\n\nIndexing\n\n\nCurrent\n\n\ntitleInfo\n is a repeatable element and the indexing will vary  depending upon the attribute \ntype\n\n\nFields Created\n\n\n\n\n\n\nmods_title_alt\n - a \nmultivalued\n, \nindexed\n field\nall \ntitle\n sub-elements of the set of \ntitleInfo\n which have the attribute \n@type=\"alternative\"\n\n\n\n\n\n\nother_title\n - a \nmultivalued\n, \nindexed\n field\nall \ntitle\n sub-elements of the set of \ntitleInfo\n which have the attribute \n@type!=\"alternative\"\n which are not the first element\n\n\n\n\n\n\nprimary_title\n - a \nsingle valued\n, \nsortable\n \nindexed\n field\n\ntitle\n sub-element of the the first \ntitleInfo\n\nin the set of \ntitleInfo\n which have the \nattribute \n@type!=\"alternative\"\n \n\n\n\n\n\n\nsubtitle\n - a \nsingle valued\n, \nsortable\n \nindexed\n field\n\nsubtitle\n sub-element of the the first \ntitleInfo\n\nin the set of \ntitleInfo\n which have the \nattribute \n@type!=\"alternative\"\n \n\n\n\n\n\n\npartnumber\n - a \nsingle valued\n, \nsortable\n \nindexed\n field\n\npartnumber\n sub-element of the the first \ntitleInfo\n\nin the set of \ntitleInfo\n which have the \nattribute \n@type!=\"alternative\"\n \n\n\n\n\n\n\npartname\n - a \nsingle valued\n, \nsortable\n \nindexed\n field\n\npartname\n sub-element of the the first \ntitleInfo\n\nin the set of \ntitleInfo\n which have the \nattribute \n@type!=\"alternative\"\n \n\n\n\n\n\n\nnonsort\n - a \nsingle valued\n, field\n\nnonsort\n sub-element of the the first \ntitleInfo\n\nin the set of \ntitleInfo\n which have the \nattribute \n@type!=\"alternative\"\n \n\n\n\n\n\n\nNotes for future\n\n\n\n\nOnly the \"primary\" title has it's non \ntitle\n subelements indexed.  This should change\n\n\nMore types are vailable than \ntype=\"alternative\"\n.  Such as \nabbreviated\n, \ntranslated\n, and \nuniform\n\n\nA composit title or \nmods_title_full\n could be created wich is an intelligent concatination of the sub-elements in a given \ntitleInfo\n element. It may be useful to sort on this.\n\n\nThe attribute \"@displayLabel\" should be respected and incorporated if present\n\n\nIf \n@type=\"translated\"\n then the \n@language\n attribute would be important\n\n\n\n\nDisplay\n\n\nCurrent\n\n\nUsually only the elements associated with the \nprimary_title\n are displayed they are a concatination of \n\n\n[nonsort] primary_title[: subtitle] [partname] [partnumber]", 
+            "text": "Intro\n\n\nElement:\n \ntitleInfo\n\n\nDefinition:\n A word, phrase, character, or group of characters, normally appearing in a\nresource, that names it or the work contained in it.\n\n\nAttributes:\n\n\ntype\n\n\nauthority\n\n\nauthorityURI\n\n\nvalueURI\n\n\nusage\n\n\ndisplayLabel\n\n\nsupplied\n\n\nnameTitleGroup\n\n\naltRepGroup\n\n\naltFormat\n\n\ncontentType\n\n\nxlink\n\n\nID\n\n\nlang\n\n\nxml:lang\n\n\nscript\n\n\ntransliteration\n\n\notherType\n\n\nSubelements:\n\n\ntitle\n\n\nsubTitle\n\n\npartNumber\n\n\npartName\n\n\nnonSort\n\n\nIndexing\n\n\nCurrent\n\n\ntitleInfo\n is a repeatable element and the indexing will vary  depending upon the attribute \ntype\n\n\nFields Created\n\n\n\n\n\n\nmods_title_alt\n - a \nmultivalued\n, \nindexed\n field\nall \ntitle\n sub-elements of the set of \ntitleInfo\n which have the attribute \n@type=\"alternative\"\n\n\n\n\n\n\nother_title\n - a \nmultivalued\n, \nindexed\n field\nall \ntitle\n sub-elements of the set of \ntitleInfo\n which have the attribute \n@type!=\"alternative\"\n which are not the first element\n\n\n\n\n\n\nprimary_title\n - a \nsingle valued\n, \nsortable\n \nindexed\n field\n\ntitle\n sub-element of the the first \ntitleInfo\n\nin the set of \ntitleInfo\n which have the \nattribute \n@type!=\"alternative\"\n \n\n\n\n\n\n\nsubtitle\n - a \nsingle valued\n, \nsortable\n \nindexed\n field\n\nsubtitle\n sub-element of the the first \ntitleInfo\n\nin the set of \ntitleInfo\n which have the \nattribute \n@type!=\"alternative\"\n \n\n\n\n\n\n\npartnumber\n - a \nsingle valued\n, \nsortable\n \nindexed\n field\n\npartnumber\n sub-element of the the first \ntitleInfo\n\nin the set of \ntitleInfo\n which have the \nattribute \n@type!=\"alternative\"\n \n\n\n\n\n\n\npartname\n - a \nsingle valued\n, \nsortable\n \nindexed\n field\n\npartname\n sub-element of the the first \ntitleInfo\n\nin the set of \ntitleInfo\n which have the \nattribute \n@type!=\"alternative\"\n \n\n\n\n\n\n\nnonsort\n - a \nsingle valued\n, field\n\nnonsort\n sub-element of the the first \ntitleInfo\n\nin the set of \ntitleInfo\n which have the \nattribute \n@type!=\"alternative\"\n \n\n\n\n\n\n\nNotes for future\n\n\n\n\nOnly the \"primary\" title has it's non \ntitle\n subelements indexed.  This should change\n\n\nMore types are vailable than \ntype=\"alternative\"\n.  Such as \nabbreviated\n, \ntranslated\n, and \nuniform\n\n\nA composit title or \nmods_title_full\n could be created wich is an intelligent concatination of the sub-elements in a given \ntitleInfo\n element. It may be useful to sort on this.\n\n\nThe attribute \"@displayLabel\" should be respected and incorporated if present\n\n\nIf \n@type=\"translated\"\n then the \n@language\n attribute would be important\n\n\n\n\nDisplay\n\n\nCurrent\n\n\nUsually only the elements associated with the \nprimary_title\n are displayed they are a concatination of \n\n\n[nonsort] primary_title[: subtitle] [partname] [partnumber]", 
             "title": "titleInfo"
         }, 
         {
             "location": "/elements/titleInfo/#intro", 
-            "text": "Element:   titleInfo  Definition:  A word, phrase, character, or group of characters, normally appearing in a\nresource, that names it or the work contained in it.  Attributes:  type ,  authority ,  authorityURI, valueURI ,  usage ,  displayLabel ,  supplied ,  nameTitleGroup ,  altRepGroup ,  altFormat ,  contentType ,  xlink ,  ID ,  lang ,  xml:lang ,  script ,  transliteration ,  otherType  Subelements:  title ,  subTitle ,  partNumber ,  partName ,  nonSort", 
+            "text": "Element:   titleInfo  Definition:  A word, phrase, character, or group of characters, normally appearing in a\nresource, that names it or the work contained in it.  Attributes:  type  authority  authorityURI  valueURI  usage  displayLabel  supplied  nameTitleGroup  altRepGroup  altFormat  contentType  xlink  ID  lang  xml:lang  script  transliteration  otherType  Subelements:  title  subTitle  partNumber  partName  nonSort", 
             "title": "Intro"
         }, 
         {
@@ -487,13 +517,23 @@
         }, 
         {
             "location": "/elements/typeOfResource/", 
-            "text": "Indexing\n\n\nDisplay", 
+            "text": "Intro\n\n\nElement:\n \ntypeOfResource\n\n\nDefinition:\n\nA term that specifies the characterisics and general type of the content of the resource\n\n\nAttributes:\n\n\ncollection; manuscript; usage; displayLabel; altRepGroup\n\n\nSubelements:\n\nNone\n\n\nIndexing\n\n\nDirect XPATH mappings\n\n\n\n\n\n\n\n\nINDEX_FIELD\n\n\nXPATH\n\n\n\n\n\n\n\n\n\n\nmods_type_of_resource\n\n\nmods:typeOfResource\n\n\n\n\n\n\n\n\nDisplay", 
             "title": "typeOfResource"
+        }, 
+        {
+            "location": "/elements/typeOfResource/#intro", 
+            "text": "Element:   typeOfResource  Definition: \nA term that specifies the characterisics and general type of the content of the resource  Attributes:  collection; manuscript; usage; displayLabel; altRepGroup  Subelements: \nNone", 
+            "title": "Intro"
         }, 
         {
             "location": "/elements/typeOfResource/#indexing", 
             "text": "", 
             "title": "Indexing"
+        }, 
+        {
+            "location": "/elements/typeOfResource/#direct-xpath-mappings", 
+            "text": "INDEX_FIELD  XPATH      mods_type_of_resource  mods:typeOfResource", 
+            "title": "Direct XPATH mappings"
         }, 
         {
             "location": "/elements/typeOfResource/#display", 
