@@ -137,7 +137,14 @@
         
             <ul>
             
+                <li class="toctree-l3"><a href="#intro">Intro</a></li>
+                
+            
                 <li class="toctree-l3"><a href="#indexing">Indexing</a></li>
+                
+                    <li><a class="toctree-l4" href="#indexing-publisherpublication-place-direct-xpath-mappings">Indexing Publisher/Publication Place (Direct XPATH mappings)</a></li>
+                
+                    <li><a class="toctree-l4" href="#indexing-dates">Indexing Dates</a></li>
                 
             
                 <li class="toctree-l3"><a href="#display">Display</a></li>
@@ -250,7 +257,105 @@
           <div role="main">
             <div class="section">
               
-                <h1 id="indexing">Indexing</h1>
+                <h1 id="intro">Intro</h1>
+<p><strong>Element:</strong> <code>&lt;originInfo&gt;</code></p>
+<p><strong>Definition:</strong>  Information about the origin of the resource,
+including place of origin or publication, publisher/originator, 
+and dates associated with the resource.</p>
+<p><strong>Attributes:</strong>
+<code>eventType</code>
+<code>displayLabel</code>
+<code>altRepGroup</code>
+<code>lang</code>
+<code>xml:lang</code>
+<code>script</code>
+<code>transliteration</code></p>
+<p><strong>Subelements:</strong>
+<code>&lt;place&gt;</code>
+<code>&lt;publisher&gt;</code>
+<code>&lt;dateIssued&gt;</code>
+<code>&lt;dateCreated&gt;</code>
+<code>&lt;dateCaptured&gt;</code>
+<code>&lt;dateValid&gt;</code>
+<code>&lt;dateModified&gt;</code>
+<code>&lt;copyrightDate&gt;</code>
+<code>&lt;dateOther&gt;</code>
+<code>&lt;edition&gt;</code>
+<code>&lt;issuance&gt;</code>
+<code>&lt;frequency&gt;</code></p>
+<h1 id="indexing">Indexing</h1>
+<h2 id="indexing-publisherpublication-place-direct-xpath-mappings">Indexing Publisher/Publication Place (Direct XPATH mappings)</h2>
+<table>
+<thead>
+<tr>
+<th>INDEX_FIELD</th>
+<th>XPATH</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>publisher</code></td>
+<td><code>mods:originInfo/mods:publisher</code></td>
+</tr>
+<tr>
+<td><code>mods_publisher_ssim</code></td>
+<td><code>mods:originInfo/mods:publisher</code></td>
+</tr>
+<tr>
+<td><code>publication_place</code></td>
+<td><code>mods:originInfo/mods:place/mods:placeTerm[@type="text"]</code></td>
+</tr>
+<tr>
+<td><code>mods_publication_place_ssim</code></td>
+<td><code>mods:originInfo/mods:place/mods:placeTerm[@type="text"]</code></td>
+</tr>
+<tr>
+<td><code>publication_code</code></td>
+<td><code>mods:originInfo/mods:place/mods:placeTerm[@type="code"]</code></td>
+</tr>
+<tr>
+<td><code>mods_publication_code_ssim</code></td>
+<td><code>mods:originInfo/mods:place/mods:placeTerm[@type="code"]</code></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Note:</strong> Duplication above.  Preference is for namespaced fields.</p>
+<h2 id="indexing-dates">Indexing Dates</h2>
+<p>The following discussion is applicable to each of the following date subelements
+<code>&lt;dateCreated&gt;</code>
+<code>&lt;dateIssued&gt;</code>
+<code>&lt;dateCaptured&gt;</code>
+<code>&lt;dateValid&gt;</code>
+<code>&lt;dateModified&gt;</code>
+<code>&lt;copyrightDate&gt;</code>
+<code>&lt;dateOther&gt;</code></p>
+<p>For each of these non-empty date elements we look at the following attributes.
+<code>@qualifier</code>, <code>@point</code>, <code>@keyDate</code></p>
+<p>The first of each sub-element adds the following fields, if <code>@qualifier!='questionable'</code>
+and <code>(@point!='end' or @keyDate=='yes')</code>:</p>
+<ul>
+<li><code>[date_name]</code> - <em>indexed</em>, <em>single-valued</em><br />
+The <code>text()</code> value for the above element converted into <code>ISO 8601</code> if possible.<br />
+Ex: <code>YYYY-MM-DDT00:00:00Z</code>.</li>
+<li><code>[date_name]_year_ssim</code> - <em>indexed</em>, <em>multivalued</em><br />
+Just the <code>YYYY</code> part of the above date</li>
+<li><code>[date_name]_ssim</code> - <em>indexed</em> <em>multivalued</em><br />
+If the date is not in <code>ISO 8601</code> format.<br />
+Just store the <code>text()</code> value of the element.</li>
+<li><code>mods_dateOther_quarter_facet</code> - <em>indexed</em> <em>multivalued</em><br />
+This field is added if <code>[date_name]==dateOther</code> and <code>@type=='quarterSort'</code><br />
+The value is <code>text()</code></li>
+<li><code>mods_dateOther_year_facet</code> - <em>indexed</em> <em>multivalued</em><br />
+This field is added if <code>[date_name]==dateOther</code> and <code>@type=='yearSort'</code><br />
+The value is <code>text()</code></li>
+<li><code>mods_[date_name]_end_ssim</code> - <em>indexed</em> <em>multivalued</em><br />
+This field is added if <code>@point=='end'</code><br />
+The value is <code>text()</code></li>
+<li><code>mods_[date_name]_[qualifier]_ssim</code> - <em>indexed</em> <em>multivalued</em><br />
+This field is added if @qualifer is in the following list <code>approximate</code>,
+<code>inferred</code>, <code>questionable</code><br />
+The value is <code>text()</code></li>
+</ul>
 <h1 id="display">Display</h1>
               
             </div>
