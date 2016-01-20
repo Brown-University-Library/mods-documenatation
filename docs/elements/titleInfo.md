@@ -6,10 +6,31 @@
 resource, that names it or the work contained in it.
 
 **Attributes:**
-``` type```, ``` authority```, ``` authorityURI, valueURI```, ``` usage```, ``` displayLabel```, ``` supplied```, ``` nameTitleGroup```, ``` altRepGroup```, ``` altFormat```, ``` contentType```, ``` xlink```, ``` ID```, ``` lang```, ``` xml:lang```, ``` script```, ``` transliteration```, ``` otherType```
+```type```
+```authority```
+```authorityURI```
+```valueURI```
+```usage```
+```displayLabel```
+```supplied```
+```nameTitleGroup```
+```altRepGroup```
+```altFormat```
+```contentType```
+```xlink```
+```ID```
+```lang```
+```xml:lang```
+```script```
+```transliteration```
+```otherType```
 
 **Subelements:**
-```<title>```, ```<subTitle>```, ```<partNumber>```, ```<partName>```, ```<nonSort>```
+```<title>```
+```<subTitle>```
+```<partNumber>```
+```<partName>```
+```<nonSort>```
 
 # Indexing
 
