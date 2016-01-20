@@ -158,6 +158,9 @@
         
             <ul>
             
+                <li class="toctree-l3"><a href="#intro">Intro</a></li>
+                
+            
                 <li class="toctree-l3"><a href="#indexing">Indexing</a></li>
                 
             
@@ -250,7 +253,27 @@
           <div role="main">
             <div class="section">
               
-                <h1 id="indexing">Indexing</h1>
+                <h1 id="intro">Intro</h1>
+<p><strong>Element:</strong> <code>&lt;recordInfo&gt;</code></p>
+<p><strong>Definition:</strong>
+Information about the metadata record.</p>
+<p><strong>Attributes:</strong>
+<code>displayLabel; altRepGroup; lang; xml:lang; script; transliteration</code></p>
+<p><strong>Subelements:</strong>
+<code>&lt;recordContentSource&gt;</code>
+<code>&lt;recordCreationDate&gt;</code>
+<code>&lt;recordChangeDate&gt;</code>
+<code>&lt;recordIdentifier&gt;</code>
+<code>&lt;recordOrigin&gt;</code>
+<code>&lt;recordInfoNote&gt;</code>
+<code>&lt;languageOfCataloging&gt;</code>
+<code>&lt;descriptionStandard&gt;</code></p>
+<h1 id="indexing">Indexing</h1>
+<p><code>mods_record_info_record_identifier_ssim</code> - indexed, multivalued<br />
+If <code>&lt;recordInfo&gt;</code> has a subelement <code>&lt;recordIdentifier&gt;</code> then include that value in this field</p>
+<p><code>mods_record_info_record_identifier_*_ssim</code>- indexed, multivalued<br />
+Same as above, however <code>*</code> is the slugified version of the <code>@source</code> 
+attribute of the <code>&lt;recordIdentifier&gt;</code></p>
 <h1 id="display">Display</h1>
               
             </div>

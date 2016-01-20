@@ -302,12 +302,17 @@
         }, 
         {
             "location": "/elements/part/", 
-            "text": "Indexing\n\n\nDisplay", 
+            "text": "Intro\n\n\nElement:\n \npart\n\n\nDefinition:\n The designation of physical parts of a resource in a detailed form.\n\n\nAttributes:\n\n\ntype\n\n\norder\n\n\ndisplayLabel\n\n\naltRepGroup\n\n\nID\n\n\nlang\n\n\nxml:lang\n\n\nscript\n\n\ntransliteration\n\n\nSubelements:\n\n\ndetail\n\n\nextent\n\n\ndate\n\n\ntext\n\n\nIndexing\n\n\nNot currently used or indexed\n\n\nDisplay", 
             "title": "Part"
         }, 
         {
+            "location": "/elements/part/#intro", 
+            "text": "Element:   part  Definition:  The designation of physical parts of a resource in a detailed form.  Attributes:  type  order  displayLabel  altRepGroup  ID  lang  xml:lang  script  transliteration  Subelements:  detail  extent  date  text", 
+            "title": "Intro"
+        }, 
+        {
             "location": "/elements/part/#indexing", 
-            "text": "", 
+            "text": "Not currently used or indexed", 
             "title": "Indexing"
         }, 
         {
@@ -317,7 +322,7 @@
         }, 
         {
             "location": "/elements/physicalDescription/", 
-            "text": "Indexing\n\n\nDisplay", 
+            "text": "Element:\n \nphysicalDescription\n\n\nDefinition:\n\nDescribes the physical attributes of the information resource.\n\n\nAttributes:\n\n\ndisplayLabel\n\n\naltRepGroup\n\n\nlang\n\n\nxml:lang\n\n\nscript\n\n\ntransliteration\n\n\nunit\n\n\nSubelements:\n\n\nform\n\n\nreformattingQuality\n\n\ninternetMediaType\n\n\nextent\n\n\ndigitalOrigin\n\n\nnote\n\n\nIndexing\n\n\nFields Created\n\n\n\n\nmods_physicalDescription_form_ssim\n - \nmultivalued\n, \nindexed\n\nThis element is added if the \nphysicalDescription\n has a subelement \nform\n \n\nwithout\n a specified \n@type\n attribute.\n\nThe value of this field is that of the \nform\n element's \ntext()\n value\n\n\nmods_physicalDescription_form_*_ssim\n - \nmultivalued\n, \nindexed\n\nThis element is added if the \nphysicalDescription\n has a subelement \nform\n \nwith\n a \nspecified \n@type\n attribute.  The \n*\n above is \n@type\n attribute\n\nThe value of this field is that of the \nform\n element's \ntext()\n value\n\n\n\n\nDirect XPATH mappings\n\n\n\n\n\n\n\n\nINDEX_FIELD\n\n\nXPATH\n\n\n\n\n\n\n\n\n\n\nmods_physicalDescription_extent_ssim\n\n\nmods:physicalDescription/mods:extent\n\n\n\n\n\n\nmods_physicalDescription_digitalOrigin_ssim\n\n\nmods:physicalDescription/mods:digitalOrigin\n\n\n\n\n\n\n\n\nDisplay", 
             "title": "physicalDescription"
         }, 
         {
@@ -326,18 +331,33 @@
             "title": "Indexing"
         }, 
         {
+            "location": "/elements/physicalDescription/#fields-created", 
+            "text": "mods_physicalDescription_form_ssim  -  multivalued ,  indexed \nThis element is added if the  physicalDescription  has a subelement  form   without  a specified  @type  attribute. \nThe value of this field is that of the  form  element's  text()  value  mods_physicalDescription_form_*_ssim  -  multivalued ,  indexed \nThis element is added if the  physicalDescription  has a subelement  form   with  a \nspecified  @type  attribute.  The  *  above is  @type  attribute \nThe value of this field is that of the  form  element's  text()  value", 
+            "title": "Fields Created"
+        }, 
+        {
+            "location": "/elements/physicalDescription/#direct-xpath-mappings", 
+            "text": "INDEX_FIELD  XPATH      mods_physicalDescription_extent_ssim  mods:physicalDescription/mods:extent    mods_physicalDescription_digitalOrigin_ssim  mods:physicalDescription/mods:digitalOrigin", 
+            "title": "Direct XPATH mappings"
+        }, 
+        {
             "location": "/elements/physicalDescription/#display", 
             "text": "", 
             "title": "Display"
         }, 
         {
             "location": "/elements/recordInfo/", 
-            "text": "Indexing\n\n\nDisplay", 
+            "text": "Intro\n\n\nElement:\n \nrecordInfo\n\n\nDefinition:\n\nInformation about the metadata record.\n\n\nAttributes:\n\n\ndisplayLabel; altRepGroup; lang; xml:lang; script; transliteration\n\n\nSubelements:\n\n\nrecordContentSource\n\n\nrecordCreationDate\n\n\nrecordChangeDate\n\n\nrecordIdentifier\n\n\nrecordOrigin\n\n\nrecordInfoNote\n\n\nlanguageOfCataloging\n\n\ndescriptionStandard\n\n\nIndexing\n\n\nmods_record_info_record_identifier_ssim\n - indexed, multivalued\n\nIf \nrecordInfo\n has a subelement \nrecordIdentifier\n then include that value in this field\n\n\nmods_record_info_record_identifier_*_ssim\n- indexed, multivalued\n\nSame as above, however \n*\n is the slugified version of the \n@source\n \nattribute of the \nrecordIdentifier\n\n\nDisplay", 
             "title": "recordInfo"
         }, 
         {
+            "location": "/elements/recordInfo/#intro", 
+            "text": "Element:   recordInfo  Definition: \nInformation about the metadata record.  Attributes:  displayLabel; altRepGroup; lang; xml:lang; script; transliteration  Subelements:  recordContentSource  recordCreationDate  recordChangeDate  recordIdentifier  recordOrigin  recordInfoNote  languageOfCataloging  descriptionStandard", 
+            "title": "Intro"
+        }, 
+        {
             "location": "/elements/recordInfo/#indexing", 
-            "text": "", 
+            "text": "mods_record_info_record_identifier_ssim  - indexed, multivalued \nIf  recordInfo  has a subelement  recordIdentifier  then include that value in this field  mods_record_info_record_identifier_*_ssim - indexed, multivalued \nSame as above, however  *  is the slugified version of the  @source  \nattribute of the  recordIdentifier", 
             "title": "Indexing"
         }, 
         {

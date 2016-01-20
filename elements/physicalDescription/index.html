@@ -153,6 +153,10 @@
             
                 <li class="toctree-l3"><a href="#indexing">Indexing</a></li>
                 
+                    <li><a class="toctree-l4" href="#fields-created">Fields Created</a></li>
+                
+                    <li><a class="toctree-l4" href="#direct-xpath-mappings">Direct XPATH mappings</a></li>
+                
             
                 <li class="toctree-l3"><a href="#display">Display</a></li>
                 
@@ -250,7 +254,55 @@
           <div role="main">
             <div class="section">
               
-                <h1 id="indexing">Indexing</h1>
+                <p><strong>Element:</strong> <code>&lt;physicalDescription&gt;</code></p>
+<p><strong>Definition:</strong>
+Describes the physical attributes of the information resource.</p>
+<p><strong>Attributes:</strong>
+<code>displayLabel</code>
+<code>altRepGroup</code>
+<code>lang</code>
+<code>xml:lang</code>
+<code>script</code>
+<code>transliteration</code>
+<code>unit</code></p>
+<p><strong>Subelements:</strong>
+<code>&lt;form&gt;</code>
+<code>&lt;reformattingQuality&gt;</code>
+<code>&lt;internetMediaType&gt;</code>
+<code>&lt;extent&gt;</code>
+<code>&lt;digitalOrigin&gt;</code>
+<code>&lt;note&gt;</code></p>
+<h1 id="indexing">Indexing</h1>
+<h2 id="fields-created">Fields Created</h2>
+<ul>
+<li><code>mods_physicalDescription_form_ssim</code> - <em>multivalued</em>, <em>indexed</em><br />
+This element is added if the <code>&lt;physicalDescription&gt;</code> has a subelement <code>&lt;form&gt;</code> 
+<strong>without</strong> a specified <code>@type</code> attribute.<br />
+The value of this field is that of the <code>&lt;form&gt;</code> element's <code>text()</code> value</li>
+<li><code>mods_physicalDescription_form_*_ssim</code> - <em>multivalued</em>, <em>indexed</em><br />
+This element is added if the <code>&lt;physicalDescription&gt;</code> has a subelement <code>&lt;form&gt;</code> <strong>with</strong> a 
+specified <code>@type</code> attribute.  The <code>*</code> above is <code>@type</code> attribute<br />
+The value of this field is that of the <code>&lt;form&gt;</code> element's <code>text()</code> value</li>
+</ul>
+<h2 id="direct-xpath-mappings">Direct XPATH mappings</h2>
+<table>
+<thead>
+<tr>
+<th>INDEX_FIELD</th>
+<th>XPATH</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>mods_physicalDescription_extent_ssim</code></td>
+<td><code>mods:physicalDescription/mods:extent</code></td>
+</tr>
+<tr>
+<td><code>mods_physicalDescription_digitalOrigin_ssim</code></td>
+<td><code>mods:physicalDescription/mods:digitalOrigin</code></td>
+</tr>
+</tbody>
+</table>
 <h1 id="display">Display</h1>
               
             </div>
