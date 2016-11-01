@@ -177,7 +177,7 @@
         }, 
         {
             "location": "/elements/language/", 
-            "text": "Intro\n\n\nElement:\n \nlanguage\n\n\nDefinition:\n A designation of the language in which the content of a resource is expressed.\n\n\nAttributes:\n\n\nusage\n\n\nobjectPart\n\n\ndisplayLabel\n\n\naltRepGroup\n\n\nlang\n\n\nxml:lang\n\n\nscript\n\n\ntransliteration:\n\n\nSubelements:\n \nlanguageTerm\n \nscriptTerm\n\n\nIndexing\n\n\nFields Created\n\n\n\n\n\n\nmods_language_ssim\n - \nmultivalued\n, \nindexed\n\nLooks at the \nlanguageTerm\n subelement of the \nlanguage\n element.\nThe value of the field is the \ntext()\n value of the \nlanguageTerm\n subelement.\n\n\n\n\n\n\nmods_language_*_ssim\n - \nmultivalued\n, \nindexed\n\nIf the languageTerm has a \n@type\n attribute then the \n*\n above\nis replaced with the \n@type\n\nThe value is constructed just as in \nmods_language_ssim\n\n\n\n\nmods_language_text_ssim\n and \nmods_language_code_ssim\n are common fields created with this patterm. \n\n\n\n\n\n\n\n\nDisplay", 
+            "text": "Intro\n\n\nElement:\n \nlanguage\n\n\nDefinition:\n A designation of the language in which the content of a resource is expressed.\n\n\nAttributes:\n\n\nusage\n\n\nobjectPart\n\n\ndisplayLabel\n\n\naltRepGroup\n\n\nlang\n\n\nxml:lang\n\n\nscript\n\n\ntransliteration:\n\n\nSubelements:\n \nlanguageTerm\n \nscriptTerm\n\n\nIndexing\n\n\nFields Created\n\n\n\n\n\n\nmods_language_ssim\n - \nmultivalued\n, \nindexed\n\nLooks at the \nlanguageTerm\n subelement of the \nlanguage\n element.\nThe value of the field is the \ntext()\n value of the \nlanguageTerm\n subelement.\n\n\n\n\n\n\nmods_language_*_ssim\n - \nmultivalued\n, \nindexed\n\nIf the \nlanguageTerm\n has a \n@type\n attribute then the \n*\n above\nis replaced with the \n@type\n\nThe value is constructed just as in \nmods_language_ssim\n\n\n\n\nmods_language_text_ssim\n and \nmods_language_code_ssim\n are common fields created with this patterm. \n\n\n\n\n\n\n\n\nDisplay", 
             "title": "Language"
         }, 
         {
@@ -192,7 +192,7 @@
         }, 
         {
             "location": "/elements/language/#fields-created", 
-            "text": "mods_language_ssim  -  multivalued ,  indexed \nLooks at the  languageTerm  subelement of the  language  element.\nThe value of the field is the  text()  value of the  languageTerm  subelement.    mods_language_*_ssim  -  multivalued ,  indexed \nIf the languageTerm has a  @type  attribute then the  *  above\nis replaced with the  @type \nThe value is constructed just as in  mods_language_ssim   mods_language_text_ssim  and  mods_language_code_ssim  are common fields created with this patterm.", 
+            "text": "mods_language_ssim  -  multivalued ,  indexed \nLooks at the  languageTerm  subelement of the  language  element.\nThe value of the field is the  text()  value of the  languageTerm  subelement.    mods_language_*_ssim  -  multivalued ,  indexed \nIf the  languageTerm  has a  @type  attribute then the  *  above\nis replaced with the  @type \nThe value is constructed just as in  mods_language_ssim   mods_language_text_ssim  and  mods_language_code_ssim  are common fields created with this patterm.", 
             "title": "Fields Created"
         }, 
         {
@@ -202,7 +202,7 @@
         }, 
         {
             "location": "/elements/location/", 
-            "text": "Intro\n\n\nElement:\n \nlocation\n\n\nDefinition:\n A designation of the language in which the content of a resource is expressed.\n\n\nAttributes:\n\n\ndisplayLabel\n\n\naltRepGroup\n\n\nlang\n\n\nxml:lang\n\n\nscript\n\n\ntransliteration\n\n\nSubelements:\n \n\nphysicalLocaiton\n\n\nshelfLocator\n\n\nurl\n\n\nholdingSimple\n\n\nholdingExternal\n\n\nIndexing\n\n\nNot currently used or indexed\n\n\nDisplay", 
+            "text": "Intro\n\n\nElement:\n \nlocation\n\n\nDefinition:\n A designation of the language in which the content of a resource is expressed.\n\n\nAttributes:\n\n\ndisplayLabel\n\n\naltRepGroup\n\n\nlang\n\n\nxml:lang\n\n\nscript\n\n\ntransliteration\n\n\nSubelements:\n \n\nphysicalLocaiton\n\n\nshelfLocator\n\n\nurl\n\n\nholdingSimple\n\n\nholdingExternal\n\n\nIndexing\n\n\n\n\n\n\nmods_location_physical_location_ssim\n - \nmultivalued\n, \nindexed\n\nLooks at the \nphysicalLocation\n subelement of the \nlocation\n element.\nThe value of the field is the \ntext()\n value of the \nphysicalLocation\n subelement.\n\n\n\n\n\n\nmods_location_copy_info_note_ssim\n - \nmultivalued\n, \nindexed\n\nLooks at the \nholdingSimple/copyInfo/note\n subelement of the \nlocation\n element.\nThe value of the field is the \ntext()\n value of the \n`holdingSimple/copyInfo/note\n subelement.\n\n\n\n\n\n\nmods_location_copy_info_note_*_ssim\n - \nmultivalued\n, \nindexed\n\nIf the \nholdingSimple/copyInfo/note\n has a \n@type\n or\n\n@displayLabel\n attribute then the \n*\n above is replaced with the \n\n@type\n or \n@displayLabel\n respectvely.\nThe value is constructed just as in \nmods_location_copy_info_note_ssim\n.\n\n\n\n\n\n\nDisplay", 
             "title": "Location"
         }, 
         {
@@ -212,7 +212,7 @@
         }, 
         {
             "location": "/elements/location/#indexing", 
-            "text": "Not currently used or indexed", 
+            "text": "mods_location_physical_location_ssim  -  multivalued ,  indexed \nLooks at the  physicalLocation  subelement of the  location  element.\nThe value of the field is the  text()  value of the  physicalLocation  subelement.    mods_location_copy_info_note_ssim  -  multivalued ,  indexed \nLooks at the  holdingSimple/copyInfo/note  subelement of the  location  element.\nThe value of the field is the  text()  value of the  `holdingSimple/copyInfo/note  subelement.    mods_location_copy_info_note_*_ssim  -  multivalued ,  indexed \nIf the  holdingSimple/copyInfo/note  has a  @type  or @displayLabel  attribute then the  *  above is replaced with the  @type  or  @displayLabel  respectvely.\nThe value is constructed just as in  mods_location_copy_info_note_ssim .", 
             "title": "Indexing"
         }, 
         {

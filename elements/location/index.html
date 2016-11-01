@@ -275,7 +275,25 @@
 <code>&lt;holdingSimple&gt;</code>
 <code>&lt;holdingExternal&gt;</code></p>
 <h1 id="indexing">Indexing</h1>
-<p>Not currently used or indexed</p>
+<ul>
+<li>
+<p><code>mods_location_physical_location_ssim</code> - <em>multivalued</em>, <em>indexed</em><br />
+Looks at the <code>physicalLocation</code> subelement of the <code>location</code> element.
+The value of the field is the <code>text()</code> value of the <code>physicalLocation</code> subelement.</p>
+</li>
+<li>
+<p><code>mods_location_copy_info_note_ssim</code> - <em>multivalued</em>, <em>indexed</em><br />
+Looks at the <code>holdingSimple/copyInfo/note</code> subelement of the <code>location</code> element.
+The value of the field is the <code>text()</code> value of the <code>`holdingSimple/copyInfo/note</code> subelement.</p>
+</li>
+<li>
+<p><code>mods_location_copy_info_note_*_ssim</code> - <em>multivalued</em>, <em>indexed</em><br />
+If the <code>holdingSimple/copyInfo/note</code> has a <code>@type</code> or
+<code>@displayLabel</code> attribute then the <code>*</code> above is replaced with the 
+<code>@type</code> or <code>@displayLabel</code> respectvely.
+The value is constructed just as in <code>mods_location_copy_info_note_ssim</code>.</p>
+</li>
+</ul>
 <h1 id="display">Display</h1>
               
             </div>
