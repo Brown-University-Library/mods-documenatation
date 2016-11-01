@@ -3,7 +3,10 @@
 <!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
 <head>
   <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
   
   <title>Language - Mods Indexing and Display</title>
   
@@ -21,6 +24,8 @@
   <script>
     // Current page data
     var mkdocs_page_name = "Language";
+    var mkdocs_page_input_path = "elements/language.md";
+    var mkdocs_page_url = "/elements/language/";
   </script>
   
   <script src="../../js/jquery-2.1.1.min.js"></script>
@@ -113,6 +118,8 @@
                 
             
                 <li class="toctree-l3"><a href="#indexing">Indexing</a></li>
+                
+                    <li><a class="toctree-l4" href="#fields-created">Fields Created</a></li>
                 
             
                 <li class="toctree-l3"><a href="#display">Display</a></li>
@@ -267,7 +274,23 @@
 <code>transliteration:</code></p>
 <p><strong>Subelements:</strong> <code>&lt;languageTerm&gt;</code> <code>&lt;scriptTerm&gt;</code></p>
 <h1 id="indexing">Indexing</h1>
-<p>Not currently used or indexed</p>
+<h2 id="fields-created">Fields Created</h2>
+<ul>
+<li>
+<p><code>mods_language_ssim</code> - <em>multivalued</em>, <em>indexed</em>
+Looks at the <code>languageTerm</code> subelement of the <code>language</code> element.
+The value of the field is the <code>text()</code> value of the <code>languageTerm</code> subelement.</p>
+</li>
+<li>
+<p><code>mods_language_*_ssim</code> - <em>multivalued</em>, <em>indexed</em>
+If the languageTerm has a <code>@type</code> attribute then the <code>*</code> above
+is replaced with the <code>@type</code>
+The value is constructed just as in <code>mods_language_ssim</code></p>
+<ul>
+<li><code>mods_language_text_ssim</code> and <code>mods_language_code_ssim</code> are common fields created with this patterm. </li>
+</ul>
+</li>
+</ul>
 <h1 id="display">Display</h1>
               
             </div>
@@ -276,7 +299,7 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="../location/" class="btn btn-neutral float-right" title="Location"/>Next <span class="icon icon-circle-arrow-right"></span></a>
+        <a href="../location/" class="btn btn-neutral float-right" title="Location">Next <span class="icon icon-circle-arrow-right"></span></a>
       
       
         <a href="../identifier/" class="btn btn-neutral" title="Identifier"><span class="icon icon-circle-arrow-left"></span> Previous</a>
